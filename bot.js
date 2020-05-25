@@ -3,9 +3,9 @@ const Discord = require('discord.js');
 //const { config } = require('dotenv');
 const client = new Discord.Client();
 
-config({
-    path: __dirname + "/.env"
-});
+//config({
+//    path: __dirname + "/.env"
+//});
 
 client.on('ready', ()=>{
     console.log('I am ready!');
