@@ -1,0 +1,16 @@
+{
+  "name": "winston",
+  "description": "Working Class Heroes d2n butler bot",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "dotenv": "^8.2.0",
+    "request": "2.81.0"
+  },
+  "main": "bot.js",
+  "author": "Miudo",
+  "license": "ISC"
+}
