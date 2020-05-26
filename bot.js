@@ -80,10 +80,13 @@ function leftToAttack(){
 }
 
 function sendMessage(){
-    var guild = client.guilds.get('163300463314337793');
-        guild.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?")    
-}
+    var generald2n = client.guilds.get('598136432707502130');
+        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
 
+    var wch = client.guilds.get('163300463314337793');
+        wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?")    
+}                           
+    
 function changestatus(){
     //todo when custom status for bots on discords are available
     //https://github.com/discord/discord-api-docs/issues/1160#issuecomment-546549711
