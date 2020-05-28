@@ -44,6 +44,30 @@ client.on('message', message => {
     }
 });
 
+client.on('message', message => {
+    if (message.content === "!coin"){
+        var number = randomIntFromInterval(0,1);
+        if (number===0){
+            message.channel.send("Heads.");
+        } else {
+            message.channel.send("Tails.");
+        }
+    }
+});
+
+client.on('message', message => {
+    if (message.content.startsWith("!dice")){
+        var resto = message.content.substring(6);
+        if (isNaN(parseInt(resto))){
+            message.channel.send("Wrong syntax. type \"!dice + space + a number\"");
+        }
+        else {
+            var number = parseInt(resto);
+            var rdnnumber = randomIntFromInterval(1,resto);
+            message.channel.send(rdnnumber);
+        }
+});
+
 client.on('message', message =>{
     if (message.content.startsWith("!reactor")) {
         var resto = message.content.substring(9);
@@ -70,6 +94,7 @@ client.on('message', message =>{
 
 function leftToAttack(){
     var d = new Date();
+    console.log(d);
     var yada = -d + d.setHours(21,20,0,0); //utc attack over
     if (Math.sign(yada)>0){
         return yada;
@@ -77,6 +102,10 @@ function leftToAttack(){
         var yoda = 1000 * 60 * 60 * 24;
         return yoda - yada;
     }
+}
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function sendMessage(){
