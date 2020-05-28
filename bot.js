@@ -66,6 +66,7 @@ client.on('message', message => {
             var rdnnumber = randomIntFromInterval(1,resto);
             message.channel.send(rdnnumber);
         }
+    }
 });
 
 client.on('message', message =>{
