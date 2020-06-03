@@ -121,7 +121,7 @@ client.on('message', message =>{
 
         }
 
-        message.channel.send("");
+        message.channel.send(resultado);
 
 
 
