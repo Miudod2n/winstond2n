@@ -11,6 +11,7 @@ client.on('ready', ()=>{
     console.log('I am ready!');
     setTimeout(function(){ // in leftToAttack() milliseconds run this:
         var dayMillseconds = 1000 * 60 * 60 * 24;
+        sendMessage();
         setInterval(function(){ // repeat this every 24 hours
             sendMessage();
         }, dayMillseconds);
