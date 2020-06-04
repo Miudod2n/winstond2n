@@ -9,9 +9,8 @@ const client = new Discord.Client();
 
 client.on('ready', ()=>{
     console.log('I am ready!');
-    sendMessage();
     setTimeout(function(){ // in leftToAttack() milliseconds run this:
-        var dayMillseconds = 1000 * 60 * 60 * 24;
+        var dayMillseconds = 1000*15;//1000 * 60 * 60 * 24;
         setInterval(function(){ // repeat this every 24 hours
             sendMessage();
         }, dayMillseconds);
