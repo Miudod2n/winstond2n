@@ -17,7 +17,7 @@ client.on('ready', ()=>{
         //setInterval(function(){
         //    changestatus();
         //}, 1000*60*15);
-    }, 1000*60*2 //leftToAttack())
+    }, 1000*60*2 )//leftToAttack())
 });
 
 client.on('message',message => {
