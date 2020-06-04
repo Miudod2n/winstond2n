@@ -49,8 +49,7 @@ client.on('message', message =>{
             case "EC":case "ec":
                 resultado = "EC stands for **E**lectric **C**omponent, a rare resource used on several constructions and items. http://d2nwiki.com/wiki/Electronic_component";break;
             case "EE": case "ee":
-                resultado = "EE is an acronym that stands for **E**xpert **E**xpeditions. This is the name of a rare distinction earned by exploring"+
-                " a ruin that is 18Km or more from town and acquiring an object. EE hunters sometimes swarm random towns in search of a cornered town (a town that spawns off the center of the map, allowing a higher chance of more EE ruins) in between their meta jumps.";break;
+                resultado = "EE is an acronym that stands for **E**xpert **E**xpeditions. This is the name of a rare distinction earned by exploring a ruin that is 18Km or more from town and acquiring an object. EE hunters sometimes swarm random towns in search of a cornered town (a town that spawns off the center of the map, allowing a higher chance of more EE ruins) in between their meta jumps.";break;
             case "e.ruin": case "E.Ruin":
                 resultado = "E.Ruin is an acronym to **E**xplorable **R**uin. This is a special sort of ruin that presents a mini-game of dungeon exploration once explored. Every big map town has one E.Ruin (2 on Hardcore towns). There are 3 types of e.ruins and each present a different set of unique items and blueprints. http://d2nwiki.com/wiki/Explorable_Ruins";break;
             case "EWB": case "ewb":
@@ -62,11 +61,7 @@ client.on('message', message =>{
             case "LS":case "ls":
                 resultado = "LS is an acronym to **Lost Souls**, a die2nite meta. LS was created on Season 4. More information: https://twinoid.com/g/lostsouls#";break;   
             case "MMJ": case "mmj":
-                resultado = "MMJ is an acronym that stands for **M**ega **M**eta **J**ump. MMJ is an event where several players schedule a day to "+
-                "jump in a random town at the same time. This is usually a server-wide event and quite often results in 5 or more towns filled with "+
-                "random players from several meta groups as wel as lone wolf players. MMJs were first used to bypass the meta-cap, a game rule that "+
-                "blocked several coalitions of joining the same town, thus disallowing groups of skilled players to play together in the same town."
-                "Once the meta-cap was lifted, the players kept doing MMJs every new season as a celebration.";break;
+                resultado = "MMJ is an acronym that stands for **M**ega **M**eta **J**ump. MMJ is an event where several players schedule a day to jump in a random town at the same time. This is usually a server-wide event and quite often results in 5 or more towns filled with random players from several meta groups as wel as lone wolf players. MMJs were first used to bypass the meta-cap, a game rule that blocked several coalitions of joining the same town, thus disallowing groups of skilled players to play together in the same town. Once the meta-cap was lifted, the players kept doing MMJs every new season as a celebration.";break;
             case "N&C":case "n&c":
                 resultado = "N&C is an acronym to **Nick & Company**, a die2nite meta. N&C was created on Season 5 by VertigoProcess. More information: https://twinoid.com/g/n-c-meta/#";break;   
             case "NHB":case "nhb":
@@ -106,17 +101,9 @@ client.on('message', message =>{
             case "ZOA":case "zoa": 
                 resultado = "ZOA stands for **Zombies Outside Alliance**, a die2nite meta. ZOA was created by Embacie (in memoriam) on Season 6. More information: https://twinoid.com/g/zoa#";break;   
             case "zoo":case "zombie zoo": 
-                resultado = "A zoo or **Zombie Zoo** is a game practice that involves clearing the zombies from the map except from one" +
-                + " corner and maintaining them there. The benefits of a zombie zoo are the freedom of movement in the World Beyond and" +
-                + " a better control of the map. To make a zombie zoo it is required a few days of scouting and camping and killing zombies" +
-                + " from everywhere there shouldn't be zombies, in other words, from the zombie zoo corner. After the zoo is built some killing" +
-                + " maintenance is necessary every other day to contain the spread. This is often called \"trim the zoo\". A zoo can be made" +
-                + " on any corner the town so desires. It also depends on the placement of ruins and zombie patchs, as well as distance and resources" +
-                + " available (both human and items). Sometimes towns that can't make a corner zoo try a \"half zoo\" which is a zoo occupying"+
-                + " half of the map.\n Creating a zombie zoo might cause a global zombie respawn if the amount of zombies killed in its making" +
-                + " surpass a certain threshold that depends on the map size.";break;   
+                resultado = "A zoo or **Zombie Zoo** is a game practice that involves clearing the zombies from the map except from one corner and maintaining them there. The benefits of a zombie zoo are the freedom of movement in the World Beyond and a better control of the map. To make a zombie zoo it is required a few days of scouting and camping and killing zombies from everywhere there shouldn't be zombies, in other words, from the zombie zoo corner. After the zoo is built some killing maintenance is necessary every other day to contain the spread. This is often called \"trim the zoo\". A zoo can be made on any corner the town so desires. It also depends on the placement of ruins and zombie patchs, as well as distance and resources available (both human and items). Sometimes towns that can't make a corner zoo try a \"half zoo\" which is a zoo occupying half of the map.\n Creating a zombie zoo might cause a global zombie respawn if the amount of zombies killed in its making surpass a certain threshold that depends on the map size.";break;   
 
-            default: resultado = "I don't know what \""+resto+" is.";
+            default: resultado = "I don't know what \""+resto+"\" is.";
 
 
         }
