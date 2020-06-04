@@ -17,12 +17,13 @@ client.on('ready', ()=>{
         //setInterval(function(){
         //    changestatus();
         //}, 1000*60*15);
-    }, leftToAttack())
+    }, 1000*60*2 //leftToAttack())
 });
 
 client.on('message',message => {
     if (message.content === '!ping') {
         message.channel.send('pong');
+        leftToAttack();
     }
 });
 
@@ -186,9 +187,11 @@ function leftToAttack(){
     console.log(d);
     var yada = -d + d.setHours(21,20,0,0); //utc attack over
     if (Math.sign(yada)>0){
+        console.log (yada);
         return yada;
     } else {
         var yoda = 1000 * 60 * 60 * 24;
+        console.log(yoda + " "+ yada);
         return yoda - yada;
     }
 }
@@ -198,8 +201,8 @@ function randomIntFromInterval(min, max) { // min and max included
 }
 
 function sendMessage(){
-    var generald2n = client.guilds.get('598136432707502130');
-        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
+    //var generald2n = client.guilds.get('598136432707502130');
+    //    generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
 
     var wch = client.guilds.get('163300463314337793');
         wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?")    
