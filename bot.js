@@ -10,14 +10,14 @@ const client = new Discord.Client();
 client.on('ready', ()=>{
     console.log('I am ready!');
     setTimeout(function(){ // in leftToAttack() milliseconds run this:
-        var dayMillseconds = 1000*15;//1000 * 60 * 60 * 24;
+        var dayMillseconds = 1000 * 60 * 60 * 24;
         setInterval(function(){ // repeat this every 24 hours
             sendMessage();
         }, dayMillseconds);
         //setInterval(function(){
         //    changestatus();
         //}, 1000*60*15);
-    }, 1000*60*2 )//leftToAttack())
+    }, leftToAttack())
 });
 
 client.on('message',message => {
@@ -201,11 +201,10 @@ function randomIntFromInterval(min, max) { // min and max included
 }
 
 function sendMessage(){
-    //var generald2n = client.guilds.get('598136432707502130');
-    //    generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
+    var generald2n = client.guilds.get('598136432707502130');
+        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
 
     var wch = client.guilds.get('163300463314337793');
-    console.log(wch);
         wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
 }                           
     
