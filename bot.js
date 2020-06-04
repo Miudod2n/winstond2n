@@ -9,6 +9,7 @@ const client = new Discord.Client();
 
 client.on('ready', ()=>{
     console.log('I am ready!');
+    sendMessage();
     setTimeout(function(){ // in leftToAttack() milliseconds run this:
         var dayMillseconds = 1000 * 60 * 60 * 24;
         setInterval(function(){ // repeat this every 24 hours
@@ -205,7 +206,8 @@ function sendMessage(){
     //    generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
 
     var wch = client.guilds.get('163300463314337793');
-        wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?")    
+    console.log(wch);
+        wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
 }                           
     
 function changestatus(){
