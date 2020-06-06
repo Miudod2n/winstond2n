@@ -56,7 +56,7 @@ client.on('message', message =>{
                 resultado = "E.Ruin is an acronym to **E**xplorable **R**uin. This is a special sort of ruin that presents a mini-game of dungeon exploration once explored. Every big map town has one E.Ruin (2 on Hardcore towns). There are 3 types of e.ruins and each present a different set of unique items and blueprints. http://d2nwiki.com/wiki/Explorable_Ruins";break;
             case "EWB": case "ewb":
                 resultado = "EWB is an acronym for **E**xploding **W**ater **B**omb, a water weapon that can be made out of Water Ration + Plastic Bag and Semtex (plastic bag + duct tape + compact detonator + semtex). http://d2nwiki.com/wiki/Exploding_Water_Bomb";break;
-            case "hippies": 
+            case "hippies": case "Hippies":
                 resultado = "hippies is an acronym to **Happy Hippies**, a die2nite meta. hippies was created by Joanne around Season 6. More information: https://twinoid.com/g/happy-hippies#";break;   
             case "ingsoc":case "INGSOC":case "Ingsoc": 
                 resultado = "INGSOC is the name of a die2nite meta created around season 4 by fward. More information: https://twinoid.com/g/ingsoc#";break;
@@ -102,9 +102,40 @@ client.on('message', message =>{
                 resultado = resto+" stands for **Wonderful Failure**, a die2nite meta. WF was created by Sense on Season 1. More information: https://twinoid.com/g/wonderful-failure#";break;
             case "ZOA":case "zoa": 
                 resultado = "ZOA stands for **Zombies Outside Alliance**, a die2nite meta. ZOA was created by Embacie (in memoriam) on Season 6. More information: https://twinoid.com/g/zoa#";break;   
-            case "zoo":case "zombie zoo": 
+            case "zoo":case "zombie zoo": case "Zoo":
                 resultado = "A zoo or **Zombie Zoo** is a game practice that involves clearing the zombies from the map except from one corner and maintaining them there. The benefits of a zombie zoo are the freedom of movement in the World Beyond and a better control of the map. To make a zombie zoo it is required a few days of scouting and camping and killing zombies from everywhere there shouldn't be zombies, in other words, from the zombie zoo corner. After the zoo is built some killing maintenance is necessary every other day to contain the spread. This is often called \"trim the zoo\". A zoo can be made on any corner the town so desires. It also depends on the placement of ruins and zombie patchs, as well as distance and resources available (both human and items). Sometimes towns that can't make a corner zoo try a \"half zoo\" which is a zoo occupying half of the map.\n Creating a zombie zoo might cause a global zombie respawn if the amount of zombies killed in its making surpass a certain threshold that depends on the map size.";break;   
-
+//**
+            case "DV":case "dv": 
+                resultado = "DV is an acronym to **Die Verdammten**, the german version of the game. DV was the first language version to be released from the original french Hordes in June 2010. It is currently stuck at Season 11. It has 3 Distant towns, 1 Hardcore, and 1 Small Town open at a time. http://www.dieverdammten.de/";break;
+            case "Zombinoia":case "zombinoia":case "zbn":case "ZBN":
+                resultado = "**Zombinoia** is the spanish version of the game. ZBN was the last language version to be released (March 2012). It is currently stuck at Season 10. There are 2 Distant Regions towns, 1 Hardcore town, and 1 Small Map town open at a time. http://www.zombinoia.com/";break;
+            case "Hordes":case "hordes":
+                resultado = "**Hordes** is the original version of the game in french. Hordes was created in June 2008. It is currently on Season 14. There are 4 Distant Regions towns, 1 Hardcore towns, and 2 Small Map Towns open at a time. http://www.hordes.fr/";break;
+            case "cata": case "Cata":
+                resultado = "Cata is a short version for **Catapult**, a construction. The Catapult is a special construction unlocked via Common Blueprints. It is capable of throwing some objects at the World Beyond. The Catapult Operator (\"Cata Operator\") is selected at random base on the activity level of every citizen. It is possible to assign a catapult operator by having one person log after the attack and achieve 5 activity stars by doing the following: ```log in \nopen gates\nwalk outside on some zones searching and back inside\ntake water from Well\npost on forum\nwork in workshop\nvote for an upgrade\nand finally finish catapult and assign an operator``` http://d2nwiki.com/wiki/Catapult";break;
+            case "zed": case "zom": case "ZED": case "Zed":
+                resultado = resto+" in die2nite is a cute acronym for **Zombies**.";break;
+            case "OO": case "oo":
+                resultado = "OO is an acronym to **O**val **O**ffice, an external website that provides tools for a better die2nite experience. OO was created by CountCount and is being hosted by spacekdt. It is primarily used to spy on other active towns and to track down attack numbers and some other data. http://ovaloffice.spacekadt.com/";break;
+            case "FDTD": case "fdtd":
+                resultado = "FDTD is an acronym to **F**rom **D**usk **T**ill **D**awn, a die2nite external tool that provides map functionalities. One can use it to update the items, zombies and other information of their town and it canb be visible to other townmates. FDTD was created and is being hosted by BerZerg. http://d2n.duskdawn.net/";break;
+            case "Mapviewer": case "mapviewer": case "MV": case"mv":
+                resultado = "**Mapviwer** was an external die2nite tool that provided map functionalities as well as other tools for a better die2nite experience. Mapviewer was created and hosted by Rulesy. Its hosting was no longer renewed so the website is down for the moment.";break;
+            case "attrition": case "despair": case "Attrition": case "Despair": case "zd": case "ZD":
+                resultado = resto+ " is a short way to say **Zombie Despair**. ZD is an effect that happens in a zone when zombies are killed. Depending on the number of zombies killed in the zone it will produce a residual killing effect that is called Zombie Despair or Zombie Attrition in the next days. http://d2nwiki.com/wiki/Zombie_Despair";break;
+            case "DR": case "dr":
+                resultado = "A "+resto+" town is a **D**istant **R**egion town. In other words it is a town with a big map. http://d2nwiki.com/wiki/Town#Distant_Towns";break;
+            case "HC": case "hc":
+                resultado = "A "+resto+" town is a **H**ard**c**ore town. It is a big map town with extra difficulties. http://d2nwiki.com/wiki/Town#Hardcore_Towns";break;
+            case "SM": case "sm":
+                resultado = "A "+resto+" town is a **S**mall **M**ap town. Originally, the game was played on such towns, but on Season 2, the bigger map towns were introduced. Nowadays, the SM towns are the home for the newcomers and players with under 100 Soul Points. Heroes can also join SM towns. http://d2nwiki.com/wiki/Town#Small_Towns";break;
+            case "BED": case "bed":
+                resultado = "BED is the acronym for **B**roken **E**lectronic **D**evice, a die2nite resource item that needs to be workshopped into other useful items. https://github.com/Miudod2n/winstond2n/raw/master/images/bed.png";break;
+            case "wapi": case "WAPI": case "WaPi":
+                resultado = resto+" is an acronym to **W**ater **P**istol, a die2nite water weapon, and can reffer both a loaded or empty Water Pistol";break;
+            case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB":
+                resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
+              
             default: resultado = "I don't know what \""+resto+"\" is.";
 
 
