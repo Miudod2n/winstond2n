@@ -64,8 +64,12 @@ client.on('message', message =>{
                 resultado = "INGSOC is the name of a die2nite meta created around season 4 by fward. More information: https://twinoid.com/g/ingsoc#";break;
             case "LS":case "ls":
                 resultado = "LS is an acronym to **Lost Souls**, a die2nite meta. LS was created on Season 4. More information: https://twinoid.com/g/lostsouls#";break;   
+            case "LMS":case "Lms":case "lms":
+                resultado = "LMS is an acronym to **L**ast **M**an **S**tanding, a distinction earned by the last player to die inside town. To be elegible to LMS, a player needs to be inside town during the last attack that will kill everyone inside town. LMS is random, so having more personal defense won't mather. Hardcore Towns award 2 LMS disctinctions: a regular LMS distinction and a Hardcore LMS distinction. Earning LMS would also earn some Hero days, but since May 2020 Hero days are now free. http://d2nwiki.com/wiki/Last_Man_Standing";break;
             case "MMJ": case "mmj":
                 resultado = "MMJ is an acronym that stands for **M**ega **M**eta **J**ump. MMJ is an event where several players schedule a day to jump in a random town at the same time. This is usually a server-wide event and quite often results in 5 or more towns filled with random players from several meta groups as wel as lone wolf players. MMJs were first used to bypass the meta-cap, a game rule that blocked several coalitions of joining the same town, thus disallowing groups of skilled players to play together in the same town. Once the meta-cap was lifted, the players kept doing MMJs every new season as a celebration.";break;
+            case "MoS": case "mos": case "MOS":
+                resultado = "MoS is an acronym that stands for **M**inistry **o**f **S**lavery, a die2nite construction unlocked via Very Rare Blueprints (One of the preset VRs from A. Bunker e.ruins). MoS allows shunned players to use AP on constructions and the AP used this way contributes with a multiplier of 1.5 . https://github.com/Miudod2n/winstond2n/raw/master/images/mos.png Metas quite often make use of this construction by deliberating shunning some players that constitute the builder force of the town. This, altogether with scrapping (since shunned can't update external maps) and removing the shun later using Altar is a common strategy for when this blueprint is unlocked early http://d2nwiki.com/wiki/Ministry_of_Slavery.";break;
             case "N&C":case "n&c":
                 resultado = "N&C is an acronym to **Nick & Company**, a die2nite meta. N&C was created on Season 5 by VertigoProcess. More information: https://twinoid.com/g/n-c-meta/#";break;   
             case "NHB":case "nhb":
@@ -137,8 +141,10 @@ client.on('message', message =>{
                 resultado = resto+" is an acronym to **W**ater **P**istol, a die2nite water weapon, and can reffer both a loaded or empty Water Pistol";break;
             case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB":
                 resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
+            case "list":
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM```";break;
               
-            default: resultado = "I don't know what \""+resto+"\" is.";
+            default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about, use the command \"!dict list\"";
 
 
         }
