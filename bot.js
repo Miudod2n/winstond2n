@@ -59,7 +59,7 @@ client.on('message', message =>{
             case "EWB": case "ewb":
                 resultado = "EWB is an acronym for **E**xploding **W**ater **B**omb, a water weapon that can be made out of Water Ration + Plastic Bag and Semtex (plastic bag + duct tape + compact detonator + semtex). http://d2nwiki.com/wiki/Exploding_Water_Bomb";break;
             case "hippies": case "Hippies":
-                resultado = "hippies is an acronym to **Happy Hippies**, a die2nite meta. hippies was created by Joanne around Season 6. More information: https://twinoid.com/g/happy-hippies#";break;   
+                resultado = "hippies is an acronym to **Happy Hippies**, a die2nite meta that did social jumps (whatever that means). hippies was created by Joanne and Babooshka76 around Season 6. More information: https://twinoid.com/g/happy-hippies#";break;   
             case "ingsoc":case "INGSOC":case "Ingsoc": 
                 resultado = "INGSOC is the name of a die2nite meta created around season 4 by fward. More information: https://twinoid.com/g/ingsoc#";break;
             case "LS":case "ls":
