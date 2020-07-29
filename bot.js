@@ -174,6 +174,15 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === "!hl3"){
+        message.channel.send("HL3 roll alert set.");
+        setTimeout(function(){
+            message.channel.send(message.author+ ", go roll at HL3 game thread.");
+        },7200 * 1000);
+    }
+});
+
+client.on('message', message => {
     if (message.content === "!coin"){
         var number = randomIntFromInterval(0,1);
         if (number===0){
@@ -183,6 +192,8 @@ client.on('message', message => {
         }
     }
 });
+
+
 
 client.on('message', message => {
     if (message.content.startsWith("!dice")){
@@ -246,6 +257,9 @@ function sendMessage(){
 
     var wch = client.guilds.get('163300463314337793');
         wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
+    
+    var oi = client.guilds.get('663021630045290530');
+     wch.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
 }                           
     
 function changestatus(){
