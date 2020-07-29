@@ -259,7 +259,7 @@ function sendMessage(){
         wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
     
     var oi = client.guilds.get('663021630045290530');
-     wch.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
+     oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
 }                           
     
 function changestatus(){
