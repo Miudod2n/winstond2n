@@ -144,7 +144,7 @@ client.on('message', message =>{
             case "list":
                 resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM```";break;
               
-            default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about, use the command \"!dict list\"";
+            default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
 
         }
