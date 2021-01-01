@@ -24,7 +24,12 @@ client.on('ready', ()=>{
 client.on('message',message => {
     if (message.content === '!ping') {
         message.channel.send('pong');
-        leftToAttack();
+    }
+});
+
+client.on('message',message => {
+    if (message.content === '!do you Winston?') {
+        message.channel.send('I hate mr. Noobowski. :(');
     }
 });
 
