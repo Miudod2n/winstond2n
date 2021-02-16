@@ -81,6 +81,8 @@ client.on('message', message =>{
                 resultado = "NHB stands for **N**o **H**oles **B**arred, a water construction that provides 150 rations. http://d2nwiki.com/wiki/No_Holes_Barred";break;
             case "OI":case "INN":case "inn": 
                 resultado = resto+" is one of the acronyms to **Oozing Inn**, a die2nite meta. OI was created on Season 1 by Bram. More information: https://twinoid.com/g/oozing-inn#";break;
+            case "IBG":case "ibg":case "Ibg": 
+                resultado = resto+" is the acronym for **I**ndian **B**urial **G**round, a type of ruin. It spawns 3-6km from town. It is the only ruin that drops Meaty Bones. It has a negative 5% (1 upgrade) penalty for camping as topology. http://d2nwiki.com/wiki/Indian_Burial_Ground";break;
             case "P9C":case "p9c":
                 resultado = "P9C is an acronym to **Plan 9 Consortium**, a die2nite meta. P9C was proved to be a meta of multiple accounts and then disbanded.";break;
             case "RM":case "rm":
