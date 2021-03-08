@@ -76,7 +76,7 @@ client.on('message', message =>{
             case "MoS": case "mos": case "MOS":
                 resultado = "MoS is an acronym that stands for **M**inistry **o**f **S**lavery, a die2nite construction unlocked via Very Rare Blueprints (One of the preset VRs from A. Bunker e.ruins). MoS allows shunned players to use AP on constructions and the AP used this way contributes with a multiplier of 1.5 . https://github.com/Miudod2n/winstond2n/raw/master/images/mos.png Metas quite often make use of this construction by deliberating shunning some players that constitute the builder force of the town. This, altogether with scrapping (since shunned can't update external maps) and removing the shun later using Altar is a common strategy for when this blueprint is unlocked early http://d2nwiki.com/wiki/Ministry_of_Slavery.";break;
             case "N&C":case "n&c":
-                resultado = "N&C is an acronym to **Nick & Company**, a die2nite meta. N&C was created on Season 5 by VertigoProcess. More information: https://twinoid.com/g/n-c-meta/#";break;   
+                resultado = "N&C is an acronym to **Nick & Company**, a die2nite meta. N&C was created on Season 5 by VertigoProcess. More information: https://twinoid.com/g/n-c-meta#";break;   
             case "NHB":case "nhb":
                 resultado = "NHB stands for **N**o **H**oles **B**arred, a water construction that provides 150 rations. http://d2nwiki.com/wiki/No_Holes_Barred";break;
             case "OI":case "INN":case "inn": 
@@ -91,6 +91,19 @@ client.on('message', message =>{
                 resultado = "RFM stands for **Royal Flying Mowers**, a die2nite meta. RFM was created on Season 3. More information: https://twinoid.com/g/rfm-royal-flying-mowers#";break;
             case "RWF":case "rwf": 
                 resultado = "RWF stands for **Running With Fridges**, a die2nite meta. RWF was created by greveur on Season 4";break;
+                
+                
+            case "unnamed":case "Unnamed": 
+                resultado = "**Unnamed** was a die2nite meta. More information: https://twinoid.com/g/unnamed-meta#";break;
+                
+            case "hive":case "Hive": 
+                resultado = "**Hive** was a die2nite meta. More information: https://twinoid.com/g/hive#";break;
+                
+                
+                
+                
+                
+                
             case "SC":case "sc": 
                 resultado = "SC stands for **Shadowclan**, a die2nite meta. Shadowclan was created on Season 5. It had other names like Clucky Bastards and RandoMeta";break; 
             case "SotA": 
@@ -149,7 +162,7 @@ client.on('message', message =>{
             case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB":
                 resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
