@@ -18,7 +18,18 @@ client.on('ready', ()=>{
         //setInterval(function(){
         //    changestatus();
         //}, 1000*60*15);
-    }, leftToAttack())
+    }, leftToAttack());
+    setTimeout(function(){ // in leftToAttack() milliseconds run this:
+        var dayMillseconds = 1000 * 60 * 60 * 24;
+        sendMessagetwo();
+        setInterval(function(){ // repeat this every 24 hours
+            sendMessage();
+        }, dayMillseconds);
+        //setInterval(function(){
+        //    changestatus();
+        //}, 1000*60*15);
+    }, leftToAttacktwo());
+    
 });
 
 client.on('message',message => {
@@ -267,6 +278,20 @@ function leftToAttack(){
     }
 }
 
+function leftToAttacktwo(){
+    var d = new Date();
+    console.log(d);
+    var yada = -d + d.setHours(22,20,5,0); //utc attack over
+    if (Math.sign(yada)>0){
+        console.log (yada);
+        return yada;
+    } else {
+        var yoda = 1000 * 60 * 60 * 24;
+        console.log(yoda + " "+ yada);
+        return yoda - yada;
+    }
+}
+
 function randomIntFromInterval(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -282,6 +307,19 @@ function sendMessage(){
      oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
 }                           
     
+function sendMessagetwo(){
+    var generald2n = client.guilds.get('598136432707502130');
+        generald2n.channels.get('598136432707502132').send("The other zombie attack is now over (MH). Are you still alive again?");
+
+    var wch = client.guilds.get('163300463314337793');
+        wch.channels.get('695661832240758864').send("The zombie attack is now over (MH). Are you still alive again?");
+    
+    var oi = client.guilds.get('663021630045290530');
+     oi.channels.get('663021630565515306').send("The zombie attack is now over (MH). Are you still alive again?");
+}                           
+    
+
+
 function changestatus(){
     //todo when custom status for bots on discords are available
     //https://github.com/discord/discord-api-docs/issues/1160#issuecomment-546549711
