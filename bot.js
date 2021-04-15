@@ -20,11 +20,11 @@ client.on('ready', ()=>{
         //}, 1000*60*15);
     }, leftToAttack());
     setTimeout(function(){ // in leftToAttack() milliseconds run this:
-        var dayMillseconds = 1000 * 60 * 60 * 24;
+        var dayMillsecondstwo = 1000 * 60 * 60 * 24;
         sendMessagetwo();
         setInterval(function(){ // repeat this every 24 hours
             sendMessage();
-        }, dayMillseconds);
+        }, dayMillsecondstwo);
         //setInterval(function(){
         //    changestatus();
         //}, 1000*60*15);
@@ -267,7 +267,7 @@ client.on('message', message =>{
 function leftToAttack(){
     var d = new Date();
     console.log(d);
-    var yada = -d + d.setHours(21,20,5,0); //utc attack over
+    var yada = -d + d.setHours(20,20,5,0); //utc attack over
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -281,7 +281,7 @@ function leftToAttack(){
 function leftToAttacktwo(){
     var d = new Date();
     console.log(d);
-    var yada = -d + d.setHours(22,20,5,0); //utc attack over
+    var yada = -d + d.setHours(21,20,5,0); //utc attack over
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
