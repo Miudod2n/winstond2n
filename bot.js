@@ -267,7 +267,7 @@ client.on('message', message =>{
 function leftToAttack(){
     var d = new Date();
     console.log(d);
-    var yada = -d + d.setHours(21,20,5,0); //utc attack over
+    var yada = -d + d.setHours(22,20,5,0); //utc attack over
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -281,7 +281,7 @@ function leftToAttack(){
 function leftToAttacktwo(){
     var d = new Date();
     console.log(d);
-    var yada = -d + d.setHours(22,20,5,0); //utc attack over
+    var yada = -d + d.setHours(23,20,5,0); //utc attack over
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
