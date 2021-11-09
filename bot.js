@@ -300,11 +300,11 @@ function sendMessage(){
     var generald2n = client.guilds.get('598136432707502130');
         generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
 
-    var wch = client.guilds.get('163300463314337793');
-        wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
+   // var wch = client.guilds.get('163300463314337793');
+   //     wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
     
-    var oi = client.guilds.get('663021630045290530');
-     oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
+   // var oi = client.guilds.get('663021630045290530');
+   //  oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
 }                           
     
 function sendMessagetwo(){
