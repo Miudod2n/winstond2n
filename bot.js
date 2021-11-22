@@ -3,8 +3,6 @@ const Discord = require('discord.js');
 //const { config } = require('dotenv');
 const client = new Discord.Client();
 
-const guild = client.guilds.fetch('598136432707502130')
-const membersa = guild.members.fetch() // returns Collection
 
 //config({
 //    path: __dirname + "/.env"
@@ -36,9 +34,12 @@ client.on('ready', ()=>{
 });
 
 client.on('message',message => {
-    if (message.content === '!raffle') {        
+    if (message.content === '!raffle') { 
+        const list = client.guilds.get("598136432707502130");
+        var contagem = 0;
+        list.members.forEach(member => contagem++);
         var number = randomIntFromInterval(0,membersa.size());
-        message.channel.send('Testing yada '+membersa[number].user.username);
+        message.channel.send('Testing yada '+list[number].member.user.username);
     }
 });
 
