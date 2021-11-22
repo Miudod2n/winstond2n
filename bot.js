@@ -26,7 +26,7 @@ client.on('ready', ()=>{
             sendMessage();
         }, dayMillsecondstwo);
         //setInterval(function(){
-        //    changestatus();
+        //    changestatus(); 
         //}, 1000*60*15);
     }, leftToAttacktwo());
     
