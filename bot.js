@@ -36,7 +36,8 @@ client.on('message',message => {
     if (message.content === '!raffle') { 
         var usersCount = client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)
         var number = randomIntFromInterval(0,usersCount);
-        var list = client.guilds.get("598136432707502130"); 
+        var list = client.guilds.cache.get("598136432707502130"); 
+       
         var amember = list.members.fetch().then(members => console.log(members));
         message.channel.send('Testing yada '+amember[number].user.username);
     }
