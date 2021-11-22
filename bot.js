@@ -34,6 +34,7 @@ client.on('ready', ()=>{
 
 client.on('message',message => {
     if (message.content === '!raffle') {
+        const client = new Discord.Client();
         const list = client.guilds.cache.get("598136432707502130");   
         const members = list.members.fetch() // returns Collection
          var number = randomIntFromInterval(0,list.members.cache.size());
