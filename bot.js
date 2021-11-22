@@ -3,8 +3,8 @@ const Discord = require('discord.js');
 //const { config } = require('dotenv');
 const client = new Discord.Client();
 
-const list = client.guilds.cache.get('598136432707502130');
-const membersa = list.members.fetch() // returns Collection
+const guild = await client.guilds.fetch('598136432707502130')
+const membersa = await guild.members.fetch() // returns Collection
 
 //config({
 //    path: __dirname + "/.env"
