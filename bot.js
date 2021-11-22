@@ -34,9 +34,10 @@ client.on('ready', ()=>{
 
 client.on('message',message => {
     if (message.content === '!raffle') {
-        const members = guild.members.fetch() // returns Collection
-         var number = randomIntFromInterval(0,members.size());
-        message.channel.send('Testing yada '+members[number]);
+        const list = client.guilds.cache.get("598136432707502130");   
+        const members = list.members.fetch() // returns Collection
+         var number = randomIntFromInterval(0,list.members.cache.size());
+        message.channel.send('Testing yada '+members[number].user.username);
     }
 });
 
