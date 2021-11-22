@@ -33,6 +33,14 @@ client.on('ready', ()=>{
 });
 
 client.on('message',message => {
+    if (message.content === '!raffle') {
+        const members = await guild.members.fetch() // returns Collection
+         var number = randomIntFromInterval(0,members.size());
+        message.channel.send('Testing yada '+members[number]);
+    }
+});
+
+client.on('message',message => {
     if (message.content === '!ping') {
         message.channel.send('pong');
     }
