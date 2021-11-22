@@ -34,7 +34,7 @@ client.on('ready', ()=>{
 
 client.on('message',message => {
     if (message.content === '!raffle') {
-        const members = await guild.members.fetch() // returns Collection
+        const members = guild.members.fetch() // returns Collection
          var number = randomIntFromInterval(0,members.size());
         message.channel.send('Testing yada '+members[number]);
     }
