@@ -31,7 +31,7 @@ client.on('ready', ()=>{
         //}, 1000*60*15);
     }, leftToAttacktwo());
     
-});
+}); 
 
 client.on('message',message => {
     if (message.content === '!raffle') { 
