@@ -48,7 +48,7 @@ client.on('ready', ()=>{
 
 client.on ('message',message =>{
       if (message.content === '!raffle') {
-          console.log(channel.members.random().toString())
+          console.log(message.channel.send(message.channel.members.random().toString()));
           
       }
 });
