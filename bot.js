@@ -48,7 +48,7 @@ client.on('ready', ()=>{
 
 client.on ('message',message =>{
       if (message.content === '!raffle') {
-          var yada = message.guilds.members.cache.filter(member => member.presence.status == 'online').random().toString();
+          var yada = message.channel.server.members.cache.filter(member => member.presence.status == 'online').random().toString();
           //var yada = message.channel.members.cache.filter(member => member.presence.status == 'online').random();
           console.log(yada);
           
