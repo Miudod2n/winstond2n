@@ -48,7 +48,8 @@ client.on('ready', ()=>{
 
 client.on ('message',message =>{
       if (message.content === '!raffle') {
-          console.log(message.channel.send(message.channel.members.random().toString()));
+          var yada = message.channel.members.cache.filter(member => member.presence.status == 'online').random();
+          console.log(yada);
           
       }
 });
