@@ -33,7 +33,7 @@ client.on('ready', ()=>{
 }); 
 
 client.on('message', async ({author, channel, content, guild}) => {
-        if (message.content === '!raffle') {
+        if (content === '!raffle') {
           try {
 
             await console.log(guild.members.cache.filter(member => member.presence.status == 'online').random().toString());
