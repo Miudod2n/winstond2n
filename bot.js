@@ -35,20 +35,9 @@ client.on('ready', ()=>{
 client.on('message', async ({author, channel, content, guild}) => {
         if (message.content === '!raffle') {
           try {
-            // uncomment this out if you don't want people to be able to do this with @everyone
-            // the backslash stops the bot from pinging everyone
-            // if (name === '@everyone') return await channel.send("You can't do this with \\@everyone!")
 
-            //const role = guild.roles.cache.find(r => r.name === name)
-            //if (!role) return await channel.send(`${name} is not a valid role!`)
-            //if (!role.members.size) return await channel.send(`There are no members with the role ${role}.`)
-              
-              //const role = guild.members.filter(member => member.presence.status == 'online').random().toString();
-
-            // discord.js automatically tags/mentions a member if it is converted to a string
-              
-              
-            await console.log(guild.members.cache.filter(member => member.presence.status == 'online').random().toString()))//channel.send(`${role.members.random()}`)
+            await console.log(guild.members.cache.filter(member => member.presence.status == 'online').random().toString());
+              //channel.send(`${role.members.random()}`)
           } catch (error) {
             // you could also send a message or something
             console.error(error)
