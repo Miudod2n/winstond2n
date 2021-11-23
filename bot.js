@@ -36,7 +36,7 @@ client.on('message', async ({author, channel, content, guild}) => {
         if (content === '!raffle') {
           try {
 
-            await console.log(guild.members.cache.filter(member => member.presence.status == 'online').random().toString());
+            await console.log(guild.members.filter(member => member.presence.status == 'online').random().toString());
               //channel.send(`${role.members.random()}`)
           } catch (error) {
             // you could also send a message or something
