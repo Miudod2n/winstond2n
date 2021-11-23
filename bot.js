@@ -32,27 +32,28 @@ client.on('ready', ()=>{
     
 }); 
 
-//client.on('message',message => {
-//    if (message.content === '!raffle') { 
-//        var usersCount = client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)
-//        console.log ("KKK "+usersCount);
-//        var number = randomIntFromInterval(0,usersCount);
-//        console.log ("KKK2 "+number);
-//        var list = client.guilds.cache.get("598136432707502130"); 
-//        console.log ("KKK3 "+list);
-       
-//        var amember = list.members.fetch().then(members => console.log(members));
-//        message.channel.send('Testing yada '+amember[number].user.username);
-//    }
-//});
+client.on('message', async ({author, channel, content, guild}) => {
+        if (message.content === '!raffle') {
+          try {
+            // uncomment this out if you don't want people to be able to do this with @everyone
+            // the backslash stops the bot from pinging everyone
+            // if (name === '@everyone') return await channel.send("You can't do this with \\@everyone!")
 
-client.on ('message',message =>{
-      if (message.content === '!raffle') {
-          var yada = message.channel.guilds.members.cache.filter(member => member.presence.status == 'online').random().toString();
-          //var yada = message.channel.members.cache.filter(member => member.presence.status == 'online').random();
-          console.log(yada);
-          
-      }
+            //const role = guild.roles.cache.find(r => r.name === name)
+            //if (!role) return await channel.send(`${name} is not a valid role!`)
+            //if (!role.members.size) return await channel.send(`There are no members with the role ${role}.`)
+              
+              //const role = guild.members.filter(member => member.presence.status == 'online').random().toString();
+
+            // discord.js automatically tags/mentions a member if it is converted to a string
+              
+              
+            await console.log(guild.members.cache.filter(member => member.presence.status == 'online').random().toString()))//channel.send(`${role.members.random()}`)
+          } catch (error) {
+            // you could also send a message or something
+            console.error(error)
+          }
+        }
 });
 
 client.on('message',message => {
