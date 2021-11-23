@@ -32,17 +32,12 @@ client.on('ready', ()=>{
     
 }); 
 
-client.on('message', async ({author, channel, content, guild}) => {
-        if (content === '!raffle') {
-          try {
-
-            await console.log(guild.members.filter(member => member.presence.status == 'online').random().toString());
-              //channel.send(`${role.members.random()}`)
-          } catch (error) {
-            // you could also send a message or something
-            console.error(error)
-          }
-        }
+client.on('message',message => {
+    if (message.content === '!raffle') {
+        
+        var randomUser = message.guild.members.random();
+        message.channel.send(randomUser);
+    }
 });
 
 client.on('message',message => {
