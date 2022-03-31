@@ -1,11 +1,8 @@
+
 require('dotenv').config();
 const Discord = require('discord.js');
-//const { config } = require('dotenv');
 const client = new Discord.Client();
 
-//config({
-//    path: __dirname + "/.env"
-//});
 
 client.on('ready', ()=>{
     console.log('I am ready!');
@@ -19,22 +16,11 @@ client.on('ready', ()=>{
         //    changestatus();
         //}, 1000*60*15);
     }, leftToAttack());
-    setTimeout(function(){ // in leftToAttack() milliseconds run this:
-        var dayMillsecondstwo = 1000 * 60 * 60 * 24;
-        sendMessagetwo();
-        setInterval(function(){ // repeat this every 24 hours
-            sendMessage();
-        }, dayMillsecondstwo);
-        //setInterval(function(){
-        //    changestatus(); 
-        //}, 1000*60*15);
-    }, leftToAttacktwo());
     
 }); 
 
 client.on('message',message => {
-    if (message.content === '!raffle') {
-        
+    if (message.content === '!raffle') { 
         var randomUser = message.guild.members.random();
         message.channel.send(randomUser);
     }
@@ -43,12 +29,6 @@ client.on('message',message => {
 client.on('message',message => {
     if (message.content === '!ping') {
         message.channel.send('pong');
-    }
-});
-
-client.on('message',message => {
-    if (message.content === '!do you Winston?') {
-        message.channel.send('I hate mr. Noobowski. :(');
     }
 });
 
@@ -109,20 +89,11 @@ client.on('message', message =>{
             case "RFM":case "rfm":
                 resultado = "RFM stands for **Royal Flying Mowers**, a die2nite meta. RFM was created on Season 3. More information: https://twinoid.com/g/rfm-royal-flying-mowers#";break;
             case "RWF":case "rwf": 
-                resultado = "RWF stands for **Running With Fridges**, a die2nite meta. RWF was created by greveur on Season 4";break;
-                
-                
+                resultado = "RWF stands for **Running With Fridges**, a die2nite meta. RWF was created by greveur on Season 4";break;             
             case "unnamed":case "Unnamed": 
                 resultado = "**Unnamed** was a die2nite meta. More information: https://twinoid.com/g/unnamed-meta#";break;
-                
-            case "hive":case "Hive": 
+            case "hive":case "Hive":
                 resultado = "**Hive** was a die2nite meta. More information: https://twinoid.com/g/hive#";break;
-                
-                
-                
-                
-                
-                
             case "SC":case "sc": 
                 resultado = "SC stands for **Shadowclan**, a die2nite meta. Shadowclan was created on Season 5. It had other names like Clucky Bastards and RandoMeta";break; 
             case "SotA": 
@@ -213,15 +184,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === "!hl3"){
-        message.channel.send("HL3 roll alert set.");
-        setTimeout(function(){
-            message.channel.send(message.author+ ", go roll at HL3 game thread.");
-        },7200 * 1000);
-    }
-});
-
-client.on('message', message => {
     if (message.content === "!coin"){
         var number = randomIntFromInterval(0,1);
         if (number===0){
@@ -231,8 +193,6 @@ client.on('message', message => {
         }
     }
 });
-
-
 
 client.on('message', message => {
     if (message.content.startsWith("!dice")){
@@ -286,20 +246,6 @@ function leftToAttack(){
     }
 }
 
-function leftToAttacktwo(){
-    var d = new Date();
-    console.log(d);
-    var yada = -d + d.setHours(23,20,5,0); //utc attack over
-    if (Math.sign(yada)>0){
-        console.log (yada);
-        return yada;
-    } else {
-        var yoda = 1000 * 60 * 60 * 24;
-        console.log(yoda + " "+ yada);
-        return yoda - yada;
-    }
-}
-
 function randomIntFromInterval(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -313,18 +259,7 @@ function sendMessage(){
     
    // var oi = client.guilds.get('663021630045290530');
    //  oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
-}                           
-    
-function sendMessagetwo(){
-    var generald2n = client.guilds.get('598136432707502130');
-        generald2n.channels.get('598136432707502132').send("The other zombie attack is now over (MH). Are you still alive again?");
-
-    //var wch = client.guilds.get('163300463314337793');
-    //    wch.channels.get('695661832240758864').send("The zombie attack is now over (MH). Are you still alive again?");
-    
-    //var oi = client.guilds.get('663021630045290530');
-    // oi.channels.get('663021630565515306').send("The zombie attack is now over (MH). Are you still alive again?");
-}                           
+}                                                
     
 
 
