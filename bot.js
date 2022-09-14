@@ -16,7 +16,16 @@ client.on('ready', ()=>{
         //    changestatus();
         //}, 1000*60*15);
     }, leftToAttack());
-    
+        setTimeout(function(){ // in leftToAttack() milliseconds run this:
+        var dayMillseconds = 1000 * 60 * 60 * 24;
+        sendMessage();
+        setInterval(function(){ // repeat this every 24 hours
+            sendMessageGuitar();
+        }, dayMillseconds);
+        //setInterval(function(){
+        //    changestatus();
+        //}, 1000*60*15);
+    }, leftToGuitar());
 }); 
 
 client.on('message',message => {
@@ -246,6 +255,20 @@ function leftToAttack(){
     }
 }
 
+function leftToGuitar(){
+    var d = new Date();
+    console.log(d);
+    var yada = -d + d.setHours(20,30,5,0); //utc attack over
+    if (Math.sign(yada)>0){
+        console.log (yada);
+        return yada;
+    } else {
+        var yoda = 1000 * 60 * 60 * 24;
+        console.log(yoda + " "+ yada);
+        return yoda - yada;
+    }
+}
+
 function randomIntFromInterval(min, max) { // min and max included 
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -259,7 +282,12 @@ function sendMessage(){
     
    // var oi = client.guilds.get('663021630045290530');
    //  oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
-}                                                
+}
+
+function sendMessageGuitar(){
+    var oi = client.guilds.get('663021630045290530');
+     oi.channels.get('663021630565515306').send("@town 1h and 30 min for the attack. Return to town as soon as possible.");
+}
     
 
 
