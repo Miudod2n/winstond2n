@@ -16,12 +16,12 @@ client.on('ready', ()=>{
         //    changestatus();
         //}, 1000*60*15);
     }, leftToAttack());
-        setTimeout(function(){ // in leftToAttack() milliseconds run this:
-        var dayMillseconds = 1000 * 60 * 60 * 24;
+    setTimeout(function(){ // in leftToAttack() milliseconds run this:
+        var dayMillsecondsguitar = 1000 * 60 * 60 * 24;
         sendMessage();
         setInterval(function(){ // repeat this every 24 hours
             sendMessageGuitar();
-        }, dayMillseconds);
+        }, dayMillsecondsguitar);
         //setInterval(function(){
         //    changestatus();
         //}, 1000*60*15);
