@@ -35,7 +35,8 @@ client.on('message',message => {
 client.on('message',message => {
     if (message.content === '!raffle') { 
         var randomUser = message.guild.members.random();
-        message.channel.send(randomUser);
+        console.log(randomUser);
+        message.channel.send("testing the raffle command = "+randomUser);
     }
 });
 
