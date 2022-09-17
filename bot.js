@@ -35,7 +35,7 @@ client.on('message',message => {
 client.on('message',message => {
     if (message.content === '!raffle') { 
         //var user = message.guild.members.random();
-        var user = message.guild.members.cache.random().user;
+        var user = message.guild.members.random().user;
         //console.log(randomUser);
         message.channel.send(`${user}`);
     }
