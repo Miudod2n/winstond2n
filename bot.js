@@ -31,9 +31,9 @@ client.on('message', message =>{
         console.log("yada1 "+resto +"|"+ english+"\n"+englishb);
         var indeex =2000;
         if (englishb.includes(resto)){indeex= englishb.IndexOf(resto);}
-        else if (germanb.toArray().includes(resto)) {indeex= germanb.IndexOf(resto);}
-        else if (spanishb.toArray().includes(resto)) {indeex= spanishb.IndexOf(resto);}
-        else if (frenchb.toArray().includes(resto)) {indeex= frenchb.IndexOf(resto);}
+        else if (germanb.toArray().includes(resto)) {indeex= germanb.indexOf(resto);}
+        else if (spanishb.toArray().includes(resto)) {indeex= spanishb.indexOf(resto);}
+        else if (frenchb.toArray().includes(resto)) {indeex= frenchb.indexOf(resto);}
         
         if (indeex>1999){
             message.channel.send("I can't translate that. Check for typos and try capitalizing the words");
