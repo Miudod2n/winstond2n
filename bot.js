@@ -28,7 +28,7 @@ client.on('ready', ()=>{
 client.on('message', message =>{
     if (message.content.startsWith("!translate")) {
         var resto = message.content.substring(11);
-        console.log("yada1 "+resto +"|"+ english+"\n"+englishb);
+        //onsole.log("yada1 "+resto +"|"+ english+"\n"+englishb);
         var indeex =2000;
         if (englishb.includes(resto)){indeex= englishb.indexOf(resto);}
         else if (germanb.includes(resto)) {indeex= germanb.indexOf(resto);}
@@ -38,10 +38,11 @@ client.on('message', message =>{
         if (indeex>1999){
             message.channel.send("I can't translate that. Check for typos and try capitalizing the words");
         } else {
-            message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es:"+spanishb[indeex]+"\n"+":flag_de: "+ germanb[indeex]);
+            message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es: "+spanishb[indeex]+"\n"+":flag_de: "+ germanb[indeex]);
         }
 
-    }});
+    }}
+         );
 
 client.on('message',message => {
     if (message.content === '!guitar') { 
