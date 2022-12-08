@@ -1,5 +1,6 @@
 
-export let array = [
+
+let array = [
 "4000 zombies gaze at us",
 "5th wheel of the caravan",
 "A BMW M3? Too easy!",
@@ -1190,3 +1191,4 @@ export let array = [
 "Zombie Grater",
 "Zombies eliminated",
 "Zone"];
+module.exports = {array}
