@@ -1,11 +1,11 @@
 
 require('dotenv').config();
-const english = require('./array_english.js');
-const german = require('./array_german.js');
-const french = require('./array_french.js');
-const spanish = require('./array_spanish.js');
 const Discord = require('./discord.js');
 const client = new Discord.Client();
+const english = require('./translate/array_english.js');
+const german = require('./translate/array_german.js');
+const french = require('./translate/array_french.js');
+const spanish = require('./translate/array_spanish.js');
 
 client.on('ready', ()=>{
     console.log('I am ready!');
