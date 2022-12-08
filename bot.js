@@ -38,7 +38,7 @@ client.on('message', message =>{
         if (indeex>1999){
             message.channel.send("I can't translate that. Check for typos and try capitalizing the words");
         } else {
-            message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es:"+spanishb[indeex]+"\n"+":flag_gb: "+ germanb[indeex]);
+            message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es:"+spanishb[indeex]+"\n"+":flag_de: "+ germanb[indeex]);
         }
 
     }});
