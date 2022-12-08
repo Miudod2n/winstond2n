@@ -42,10 +42,10 @@ client.on('message', message =>{
             var indexb3=findBestMatch(resto, spanishb) ;
             var indexb4=findBestMatch(resto, frenchb) ;
             message.channel.send("I can't translate that. Check for typos and try capitalizing the words.\n"+"Did you mean any of these? "+
-                                \"englishb[indexb1]+"\", "+
-                                 \"germanb[indexb2]+"\", "+
-                                 \"spanishb[indexb3]+"\", "+
-                                 \"frenchb[indexb4]+"\""
+                                "\""+englishb[indexb1]+"\", "+
+                                "\""+germanb[indexb2]+"\", "+
+                                "\""+spanishb[indexb3]+"\", "+
+                                "\""+frenchb[indexb4]+"\""
                                 );
         } else {
             message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es: "+spanishb[indeex]+"\n"+":flag_de: "+ germanb[indeex]);
