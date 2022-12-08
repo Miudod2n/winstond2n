@@ -3,6 +3,7 @@ require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const english = require('./translate/array_english.js');
+const englishb = Array.from(english);
 const german = require('./translate/array_german.js');
 const french = require('./translate/array_french.js');
 const spanish = require('./translate/array_spanish.js');
@@ -27,7 +28,7 @@ client.on('message', message =>{
         var resto = message.content.substring(11);
         console.log("yada1 "+resto +"|"+ english);
         var indeex =2000;
-        if (english.toArray().includes(resto)){indeex= english.IndexOf(resto);}
+        if (englishb.includes(resto)){indeex= englishb.IndexOf(resto);}
         else if (german.toArray().includes(resto)) {indeex= german.IndexOf(resto);}
         else if (spanish.toArray().includes(resto)) {indeex= spanish.IndexOf(resto);}
         else if (french.toArray().includes(resto)) {indeex= french.IndexOf(resto);}
