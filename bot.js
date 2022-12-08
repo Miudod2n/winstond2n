@@ -1,5 +1,9 @@
 
 require('dotenv').config();
+const english = require('array_english.js');
+const german = require('array_german.js');
+const french = require('array_french.js');
+const spanish = require('array_spanish.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -18,6 +22,23 @@ client.on('ready', ()=>{
 
 }); 
 
+client.on('message', message =>{
+    if (message.content.startsWith("!translate")) {
+        var resto = message.content.substring(11);
+        console.log("yada1 "+resto);
+        var indeex =2000;
+        if (english.includes(resto){indeex= english.IndexOf(resto);}
+        else if (german.includes(resto) {indeex= german.IndexOf(resto);}
+        else if (spanish.includes(resto) {indeex= spanish.IndexOf(resto);}
+        else if (french.includes(resto) {indeex= french.IndexOf(resto);}
+        
+        if (indeex>1999){
+            message.channel.send("I can't translate that. Check for typos and try capitalizing the words");
+        } else {
+            message.channel.send(":flag_gb: "+english[indeex]+"\n"+ ":flag_fr: "+french[indeex]+"\n"+":flag_es:"+spanish[indeex]+"\n"+":flag_gb: "+ german[indeex]);
+        }
+
+    }});
 
 client.on('message',message => {
     if (message.content === '!guitar') { 
