@@ -1,5 +1,4 @@
-
-export let array = [
+ let array = [
 "4000 zombies nos miran",
 "Quinta rueda de la caravana",
 "¿Dónde está Larchi?",
@@ -2384,3 +2383,4 @@ export let array = [
 "Raspa-Zombies",
 "Zombies eliminados",
 "Zona"];
+module.exports = {array}
