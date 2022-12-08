@@ -26,7 +26,7 @@ client.on('ready', ()=>{
 client.on('message', message =>{
     if (message.content.startsWith("!translate")) {
         var resto = message.content.substring(11);
-        console.log("yada1 "+resto +"|"+ englishb);
+        console.log("yada1 "+resto +"|"+ english+"\n"+englishb);
         var indeex =2000;
         if (englishb.includes(resto)){indeex= englishb.IndexOf(resto);}
         else if (german.toArray().includes(resto)) {indeex= german.IndexOf(resto);}
