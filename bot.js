@@ -1,6 +1,6 @@
 
 require('dotenv').config();
-const Discord = require('./discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const english = require('./translate/array_english.js');
 const german = require('./translate/array_german.js');
