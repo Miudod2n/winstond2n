@@ -30,13 +30,23 @@ client.on('message', message =>{
         var resto = message.content.substring(11);
         //onsole.log("yada1 "+resto +"|"+ english+"\n"+englishb);
         var indeex =2000;
+        
         if (englishb.includes(resto)){indeex= englishb.indexOf(resto);}
         else if (germanb.includes(resto)) {indeex= germanb.indexOf(resto);}
         else if (spanishb.includes(resto)) {indeex= spanishb.indexOf(resto);}
         else if (frenchb.includes(resto)) {indeex= frenchb.indexOf(resto);}
         
         if (indeex>1999){
-            message.channel.send("I can't translate that. Check for typos and try capitalizing the words");
+            var indexb1 =findBestMatch(resto, englishb) ; 
+            var indexb2=findBestMatch(resto, germanb) ;
+            var indexb3=findBestMatch(resto, spanishb) ;
+            var indexb4=findBestMatch(resto, frenchb) ;
+            message.channel.send("I can't translate that. Check for typos and try capitalizing the words.\n"+"Did you mean any of these? "+
+                                \"englishb[indexb1]+"\", "+
+                                 \"germanb[indexb2]+"\", "+
+                                 \"spanishb[indexb3]+"\", "+
+                                 \"frenchb[indexb4]+"\""
+                                );
         } else {
             message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es: "+spanishb[indeex]+"\n"+":flag_de: "+ germanb[indeex]);
         }
@@ -324,6 +334,69 @@ function sendMessageGuitar(){
 function changestatus(){
     //todo when custom status for bots on discords are available
     //https://github.com/discord/discord-api-docs/issues/1160#issuecomment-546549711
+}
+
+
+function compareTwoStrings(first, second) {
+	first = first.replace(/\s+/g, '')
+	second = second.replace(/\s+/g, '')
+
+	if (first === second) return 1; // identical or empty
+	if (first.length < 2 || second.length < 2) return 0; // if either is a 0-letter or 1-letter string
+
+	let firstBigrams = new Map();
+	for (let i = 0; i < first.length - 1; i++) {
+		const bigram = first.substring(i, i + 2);
+		const count = firstBigrams.has(bigram)
+			? firstBigrams.get(bigram) + 1
+			: 1;
+
+		firstBigrams.set(bigram, count);
+	};
+
+	let intersectionSize = 0;
+	for (let i = 0; i < second.length - 1; i++) {
+		const bigram = second.substring(i, i + 2);
+		const count = firstBigrams.has(bigram)
+			? firstBigrams.get(bigram)
+			: 0;
+
+		if (count > 0) {
+			firstBigrams.set(bigram, count - 1);
+			intersectionSize++;
+		}
+	}
+
+	return (2.0 * intersectionSize) / (first.length + second.length - 2);
+}
+
+function findBestMatch(mainString, targetStrings) {
+	if (!areArgsValid(mainString, targetStrings)) throw new Error('Bad arguments: First argument should be a string, second should be an array of strings');
+	
+	const ratings = [];
+	let bestMatchIndex = 0;
+
+	for (let i = 0; i < targetStrings.length; i++) {
+		const currentTargetString = targetStrings[i];
+		const currentRating = compareTwoStrings(mainString, currentTargetString)
+		ratings.push({target: currentTargetString, rating: currentRating})
+		if (currentRating > ratings[bestMatchIndex].rating) {
+			bestMatchIndex = i
+		}
+	}
+	
+	
+	//const bestMatch = ratings[bestMatchIndex]
+	
+	return bestMatchIndex;
+}
+
+function areArgsValid(mainString, targetStrings) {
+	if (typeof mainString !== 'string') return false;
+	if (!Array.isArray(targetStrings)) return false;
+	if (!targetStrings.length) return false;
+	if (targetStrings.find( function (s) { return typeof s !== 'string'})) return false;
+	return true;
 }
 
 //
