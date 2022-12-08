@@ -2,11 +2,14 @@
 require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const english = require('./translate/array_english.js');
-const englishb = Array.from(english);
-const german = require('./translate/array_german.js');
-const french = require('./translate/array_french.js');
-const spanish = require('./translate/array_spanish.js');
+let english = require('./translate/array_english.js');
+let englishb = english.array;
+let german = require('./translate/array_german.js');
+let germanb = german.array;
+let french = require('./translate/array_french.js');
+let frenchb = french.array;
+let spanish = require('./translate/array_spanish.js');
+let spanishb = spanish.array;
 
 client.on('ready', ()=>{
     console.log('I am ready!');
@@ -29,14 +32,14 @@ client.on('message', message =>{
         console.log("yada1 "+resto +"|"+ english+"\n"+englishb);
         var indeex =2000;
         if (englishb.includes(resto)){indeex= englishb.IndexOf(resto);}
-        else if (german.toArray().includes(resto)) {indeex= german.IndexOf(resto);}
-        else if (spanish.toArray().includes(resto)) {indeex= spanish.IndexOf(resto);}
-        else if (french.toArray().includes(resto)) {indeex= french.IndexOf(resto);}
+        else if (germanb.toArray().includes(resto)) {indeex= germanb.IndexOf(resto);}
+        else if (spanishb.toArray().includes(resto)) {indeex= spanishb.IndexOf(resto);}
+        else if (frenchb.toArray().includes(resto)) {indeex= frenchb.IndexOf(resto);}
         
         if (indeex>1999){
             message.channel.send("I can't translate that. Check for typos and try capitalizing the words");
         } else {
-            message.channel.send(":flag_gb: "+english[indeex]+"\n"+ ":flag_fr: "+french[indeex]+"\n"+":flag_es:"+spanish[indeex]+"\n"+":flag_gb: "+ german[indeex]);
+            message.channel.send(":flag_gb: "+englishb[indeex]+"\n"+ ":flag_fr: "+frenchb[indeex]+"\n"+":flag_es:"+spanishb[indeex]+"\n"+":flag_gb: "+ germanb[indeex]);
         }
 
     }});
