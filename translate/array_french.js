@@ -1,5 +1,5 @@
 
-exports.array = [
+export const array = [
 "4000 zombies nous contemplent",
 "5e roue du carrosse",
 "Où est Larchi ?",
