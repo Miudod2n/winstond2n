@@ -30,7 +30,7 @@ client.on('message', message =>{
         var resto = message.content.substring(11);
         console.log("yada1 "+resto +"|"+ english+"\n"+englishb);
         var indeex =2000;
-        if (englishb.includes(resto)){indeex= englishb.IndexOf(resto);}
+        if (englishb.includes(resto)){indeex= englishb.indexOf(resto);}
         else if (germanb.toArray().includes(resto)) {indeex= germanb.indexOf(resto);}
         else if (spanishb.toArray().includes(resto)) {indeex= spanishb.indexOf(resto);}
         else if (frenchb.toArray().includes(resto)) {indeex= frenchb.indexOf(resto);}
