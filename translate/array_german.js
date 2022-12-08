@@ -1,5 +1,5 @@
 
-export const array = [
+module.exports array = [
 "4000 Zombies starren uns an",
 "5. Rad am Wagen",
 "Où est Larchi ?",
