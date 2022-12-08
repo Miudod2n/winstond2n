@@ -1,4 +1,4 @@
-module.exports array = [
+export let array = [
 "4000 zombies nous contemplent",
 "5e roue du carrosse",
 "Où est Larchi ?",
