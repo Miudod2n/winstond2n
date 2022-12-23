@@ -234,6 +234,15 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === "!ass"){
+        message.channel.send("Short Auto-search warning set (1h 30min).");
+        setTimeout(function(){
+            message.channel.send(message.author+ ", go check your auto-search.");
+        },5400 * 1000);
+    }
+});
+
+client.on('message', message => {
     if (message.content === "!coin"){
         var number = randomIntFromInterval(0,1);
         if (number===0){
@@ -314,8 +323,11 @@ function randomIntFromInterval(min, max) { // min and max included
 }
 
 function sendMessage(){
+	var dateObj = new Date();
+	var month = dateObj.getUTCMonth() + 1; 
+	var day = dateObj.getUTCDate();
     var generald2n = client.guilds.get('598136432707502130');
-        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?");
+        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?\nbtw, <@273185203705610241> it is also "+day+"/"+month);
 
    // var wch = client.guilds.get('163300463314337793');
    //     wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
