@@ -411,7 +411,7 @@ function areArgsValid(mainString, targetStrings) {
 	return true;
 }
 
-funtion birthdays (day,month){
+function birthdays (day,month){
 	var aniver = "";var c=false;
 	if (day==="05"&&month==="04"){c=true;aniver="<@253564361786785793>"}//Valedres
 	else if (day==="17"&&month==="12"){c=true;aniver="<@594216847721889803>"}//Joanne
