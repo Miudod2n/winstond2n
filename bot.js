@@ -325,9 +325,9 @@ function randomIntFromInterval(min, max) { // min and max included
 function sendMessage(){
 	var dateObj = new Date();
 	var month = dateObj.getUTCMonth() + 1; 
-	var day = dateObj.getUTCDate();
+	var day = dateObj.getUTCDate()+1;
     var generald2n = client.guilds.get('598136432707502130');
-        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?\nbtw, <@273185203705610241> it is also "+day+"/"+month);
+        generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?"+birthdays(day+"",month+""));
 
    // var wch = client.guilds.get('163300463314337793');
    //     wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
@@ -409,6 +409,31 @@ function areArgsValid(mainString, targetStrings) {
 	if (!targetStrings.length) return false;
 	if (targetStrings.find( function (s) { return typeof s !== 'string'})) return false;
 	return true;
+}
+
+funtion birthdays (day,month){
+	var aniver = "";var c=false;
+	if (day==="05"&&month==="04"){c=true;aniver="<@253564361786785793>"}//Valedres
+	else if (day==="17"&&month==="12"){c=true;aniver="<@594216847721889803>"}//Joanne
+	else if (day==="18"&&month==="12"){c=true;aniver="<@269191615913000961>"}//matsuuu
+	else if (day==="26"&&month==="09"){c=true;aniver="<@267798407085686784>"}//fdamned6
+	else if (day==="28"&&month==="06"){c=true;aniver="<@268175075151314945>"}//Termineitron
+	else if (day==="24"&&month==="05"){c=true;aniver="<@141046601572417536>"}//Nekomine
+	else if (day==="16"&&month==="04"){c=true;aniver="<@455904123716501513>"}//DGba
+	else if (day==="15"&&month==="08"){c=true;aniver="<@455290757432213506>"}//Palomino
+	else if (day==="30"&&month==="06"){c=true;aniver="<@293129681409146880>"}//UrsulaK
+	else if (day==="20"&&month==="06"){c=true;aniver="<@346743408053846017>, <@304320898343895040> and <@273185203705610241>"}//cliche, asdryu, Miudo
+	else if (day==="11"&&month==="02"){c=true;aniver="<@134064828976332800>"}//Dylan
+	else if (day==="25"&&month==="11"){c=true;aniver="<@254985021192929281>"}//RuinT
+	else if (day==="09"&&month==="09"){c=true;aniver="<@416282550256795648>"}//Novaborn
+	else if (day==="26"&&month==="08"){c=true;aniver="<@220556893716742144>"}//Bram
+	else if (day==="25"&&month==="06"){c=true;aniver="<@155991335411777537>"}//yungching
+	else if (day==="14"&&month==="03"){c=true;aniver="<@466628724960264194>"}//Ivana
+	else if (day==="25"&&month==="12"){c=true;aniver="<@544990372149985280>"}//Denny joke
+	else {aniver="";}
+	
+	if (c){return "\nHappy Birthday "+aniverh+"!";}
+	else {return "\n:zombie::door::question";}
 }
 
 //
