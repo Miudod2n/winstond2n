@@ -432,8 +432,8 @@ function birthdays (day,month){
 	else if (day==="25"&&month==="12"){c=true;aniver="<@544990372149985280>"}//Denny joke
 	else {aniver="";}
 	
-	if (c){return "\nHappy Birthday "+aniverh+"!";}
-	else {return "\n:zombie::door::question";}
+	if (c){return "\nHappy Birthday "+aniver+"!";}
+	else {return "\n:zombie::door::question:";}
 }
 
 //
