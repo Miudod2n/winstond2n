@@ -29,7 +29,7 @@ client.on('message', message =>{
     if (message.content.startsWith("!translate")) {
         var resto = message.content.substring(11);
         //onsole.log("yada1 "+resto +"|"+ english+"\n"+englishb);
-        var indeex =2000;
+        var indeex =2000; 
         
         if (englishb.includes(resto)){indeex= englishb.indexOf(resto);}
         else if (germanb.includes(resto)) {indeex= germanb.indexOf(resto);}
