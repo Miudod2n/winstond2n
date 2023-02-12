@@ -412,6 +412,7 @@ function areArgsValid(mainString, targetStrings) {
 }
 
 function birthdays (day,month){
+	console.log ("yada "+day+ " | "+month)
 	var aniver = "";var c=false;
 	//January
 	//February
