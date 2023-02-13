@@ -412,41 +412,40 @@ function areArgsValid(mainString, targetStrings) {
 }
 
 function birthdays (day,month){
-	console.log ("yada "+day+ " | "+month)
 	var aniver = "";var c=false;
 	//January
 	//February
-	if (day==="11"&&month==="02"){c=true;aniver="<@134064828976332800>"}//Dylan
-	else if (day==="14"&&month==="02"){c=true;aniver="<@302855904452280323>"}//Natamar
-	else if (day==="26"&&month==="02"){c=true;aniver="<@379924747879710721>"}//Cinek West
+	if (day==11&&month==2){c=true;aniver="<@134064828976332800>"}//Dylan
+	else if (day==14&&month==2){c=true;aniver="<@302855904452280323>"}//Natamar
+	else if (day==26&&month==2){c=true;aniver="<@379924747879710721>"}//Cinek West
 	//March
-	else if (day==="14"&&month==="03"){c=true;aniver="<@466628724960264194>"}//Ivana
+	else if (day==14&&month==3){c=true;aniver="<@466628724960264194>"}//Ivana
 	//April
-	else if (day==="05"&&month==="04"){c=true;aniver="<@253564361786785793>"}//Valedres
-	else if (day==="16"&&month==="04"){c=true;aniver="<@455904123716501513>"}//DGba
+	else if (day==5&&month==4){c=true;aniver="<@253564361786785793>"}//Valedres
+	else if (day==16&&month==4){c=true;aniver="<@455904123716501513>"}//DGba
 	//May
-	else if (day==="24"&&month==="05"){c=true;aniver="<@141046601572417536>"}//Nekomine
+	else if (day==24&&month==5){c=true;aniver="<@141046601572417536>"}//Nekomine
 	//June
-	else if (day==="12"&&month==="06"){c=true;aniver="<@372279099667775508>"}//Damon
-	else if (day==="20"&&month==="06"){c=true;aniver="<@346743408053846017>, <@304320898343895040> and <@273185203705610241>"}//cliche, asdryu, Miudo
-	else if (day==="25"&&month==="06"){c=true;aniver="<@155991335411777537>"}//yungching
-	else if (day==="28"&&month==="06"){c=true;aniver="<@268175075151314945>"}//Termineitron
-	else if (day==="30"&&month==="06"){c=true;aniver="<@293129681409146880>"}//UrsulaK
+	else if (day==12&&month==6){c=true;aniver="<@372279099667775508>"}//Damon
+	else if (day==20&&month==6){c=true;aniver="<@346743408053846017>, <@304320898343895040> and <@273185203705610241>"}//cliche, asdryu, Miudo
+	else if (day==25&&month==6){c=true;aniver="<@155991335411777537>"}//yungching
+	else if (day==28&&month==6){c=true;aniver="<@268175075151314945>"}//Termineitron
+	else if (day==30&&month==6){c=true;aniver="<@293129681409146880>"}//UrsulaK
 	//July
 	//August
-	else if (day==="11"&&month==="08"){c=true;aniver="<@146652848245964800>"}//Theincredible
-	else if (day==="15"&&month==="08"){c=true;aniver="<@455290757432213506>"}//Palomino
-	else if (day==="18"&&month==="08"){c=true;aniver="<@624067980661227550>"}//Sheya
-	else if (day==="26"&&month==="08"){c=true;aniver="<@220556893716742144>"}//Bram
+	else if (day==11&&month==8){c=true;aniver="<@146652848245964800>"}//Theincredible
+	else if (day==15&&month==8){c=true;aniver="<@455290757432213506>"}//Palomino
+	else if (day==18&&month==8){c=true;aniver="<@624067980661227550>"}//Sheya
+	else if (day==26&&month==8){c=true;aniver="<@220556893716742144>"}//Bram
 	//September
-	else if (day==="09"&&month==="09"){c=true;aniver="<@416282550256795648>"}//Novaborn
-	else if (day==="26"&&month==="09"){c=true;aniver="<@267798407085686784>"}//fdamned6
+	else if (day==9&&month==9){c=true;aniver="<@416282550256795648>"}//Novaborn
+	else if (day==26&&month==9){c=true;aniver="<@267798407085686784>"}//fdamned6
 	//November
-	else if (day==="25"&&month==="11"){c=true;aniver="<@254985021192929281>"}//RuinT
+	else if (day==25&&month==11){c=true;aniver="<@254985021192929281>"}//RuinT
 	//December
-	else if (day==="17"&&month==="12"){c=true;aniver="<@594216847721889803>"}//Joanne
-	else if (day==="18"&&month==="12"){c=true;aniver="<@269191615913000961>"}//matsuuu
-	else if (day==="25"&&month==="12"){c=true;aniver="<@544990372149985280>"}//Denny joke
+	else if (day==17&&month==12){c=true;aniver="<@594216847721889803>"}//Joanne
+	else if (day==18&&month==12){c=true;aniver="<@269191615913000961>"}//matsuuu
+	else if (day==25&&month==12){c=true;aniver="<@544990372149985280>"}//Denny joke
 	else {aniver="";}
 	
 	if (c){return "\nHappy Birthday "+aniver+"!";}
