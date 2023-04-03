@@ -18,11 +18,16 @@ client.on('ready', ()=>{
         setInterval(function(){ // repeat this every 24 hours
             sendMessage();
         }, dayMillseconds);
-        //setInterval(function(){
-        //    changestatus();
-        //}, 1000*60*15);
+        
     }, leftToAttack());
-
+    
+	setTimeout(function(){
+		var dayMillseconds = 1000 * 60 * 60 * 24;
+		sendMessageGuitar();
+	        setInterval(function(){
+                    sendMessageGuitar();
+                }, dayMillseconds);
+	}, leftToGuitar());
 }); 
 
 client.on('message', message =>{
@@ -307,7 +312,7 @@ function leftToAttack(){
 
 function leftToGuitar(){
     var d = new Date();
-    var yada = -d + d.setHours(21,30,5,0); //utc attack over
+    var yada = -d + d.setHours(16,30,5,0); //18:30 igt
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
