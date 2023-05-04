@@ -343,7 +343,8 @@ function sendMessage(){
 
 function sendMessageGuitar(){
     var oi = client.guilds.get('663021630045290530');
-     oi.channels.get('663021630565515306').send("30 min for Night Time! Return near or to <@&699730237625335809> as soon as possible.");
+     oi.channels.get('663021630565515306').send("30 min for Night Time! Better move to your campsite as soon as possible.");
+	//<@&699730237625335809>
 }
     
 
