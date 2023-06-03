@@ -344,7 +344,7 @@ function sendMessage(){
 function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat
 	var oi = client.guilds.get('598136432707502130'); //June 2023 town
-     oi.channels.get('1113465436609192070').send("30 min for Night Time! Everyone @here that are still outside better move back or close to town");
+     oi.channels.get('1113465436609192070').send("30 min for Night Time! Everyone @here that are still outside better move back to 1km or teleport range");
 	//<@&699730237625335809>
 }
     
