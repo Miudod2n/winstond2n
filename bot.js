@@ -273,6 +273,24 @@ client.on('message', message => {
 });
 
 client.on('message', message =>{
+    if (message.content.startsWith("!alarm")) {
+        var resto = message.content.substring(7);
+        if (isNaN(parseInt(resto))) {
+            message.channel.send("Wrong syntax. type \"!alarm + a number value in minutes\"");
+        }
+        else {
+	resto = parseInt(resto);
+
+        message.channel.send("Alarm warning set ("+resto+"min).");
+        setTimeout(function(){
+            message.channel.send(message.author+ ", you wanted a ping now.");
+        },(resto*60) * 1000);
+            }
+        }
+    }
+);
+
+client.on('message', message =>{
     if (message.content.startsWith("!reactor")) {
         var resto = message.content.substring(9);
         if (isNaN(parseInt(resto))) {
