@@ -2382,5 +2382,12 @@
 "Favorito de los zombies",
 "Raspa-Zombies",
 "Zombies eliminados",
-"Zona","Jarra De Cerveza", "Perro Salchicha Pulgoso","Retroproyector Antiguo","Pretzel Arenoso","Palo De Hurling Clásico","Pinta Pegajosa","Medalla De Un Soldado"];
+"Zona",
+  "Jarra De Cerveza", 
+  "Perro Salchicha Pulgoso",
+  "Retroproyector Antiguo",
+  "Pretzel Arenoso",
+  "Palo De Hurling Clásico",
+  "Pinta Pegajosa",
+  "Medalla De Un Soldado"];
 module.exports = {array}
