@@ -1188,5 +1188,12 @@ let array = [
 "Favori des zombies",
 "Râpe à zombies",
 "Zombies éliminés",
-"Zone"];
+"Zone",
+'Chope De Liquide Tiédasse",
+"Teckel Galeux",
+"Rétroprojecteur Rétro",
+"Bretzel Sableux",
+"Bâton De Hurling Primitif",
+"Pinte Collante",
+"Pins De Collectionneur"];
 module.exports = {array}
