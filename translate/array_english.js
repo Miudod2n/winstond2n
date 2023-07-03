@@ -1197,5 +1197,5 @@ let array = [
 "Sandy Pretzel",
 "Primitive Hurling Stick",
 "Sticky Pint",
-"Collector Pins"];
+"Collector Pins"]; 
 module.exports = {array}
