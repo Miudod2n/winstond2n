@@ -1190,5 +1190,12 @@ let array = [
 "Zombie favourite",
 "Zombie Grater",
 "Zombies eliminated",
-"Zone"];
+"Zone",
+'Mug Of Lukewarm Liquid",
+'Mangy Dachshund",
+"Retro Overhead Projector",
+"Sandy Pretzel",
+"Primitive Hurling Stick",
+"Sticky Pint",
+"Collector Pins"];
 module.exports = {array}
