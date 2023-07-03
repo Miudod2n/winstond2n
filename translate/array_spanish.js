@@ -2383,7 +2383,7 @@
 "Raspa-Zombies",
 "Zombies eliminados",
 "Zona",
-"Jarra De Cerveza"
+"Jarra De Cerveza",
 "Perro Salchicha Pulgoso",
 "Retroproyector Antiguo",
 "Pretzel Arenoso",
