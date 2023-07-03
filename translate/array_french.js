@@ -1189,7 +1189,7 @@ let array = [
 "Râpe à zombies",
 "Zombies éliminés",
 "Zone",
-'Chope De Liquide Tiédasse",
+"Chope De Liquide Tiédasse",
 "Teckel Galeux",
 "Rétroprojecteur Rétro",
 "Bretzel Sableux",
