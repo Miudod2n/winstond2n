@@ -361,9 +361,9 @@ function sendMessage(){
 
 function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat
-	var oi = client.guilds.get('598136432707502132'); 
+	var oi = client.guilds.get('598136432707502130'); 
 	//598136432707502132 general chat
-     oi.channels.get('1113465436609192070').send("30 min for Night Time! I'm scared!");
+     oi.channels.get('598136432707502132').send("30 min for Night Time! I'm scared!");598136432707502132
 	//<@&699730237625335809>
 }
     
@@ -464,6 +464,7 @@ function birthdays (day,month){
 	else if (day==15&&month==8){c=true;aniver="<@455290757432213506>"}//Palomino
 	else if (day==18&&month==8){c=true;aniver="<@624067980661227550>"}//Sheya
 	else if (day==26&&month==8){c=true;aniver="<@220556893716742144>"}//Bram
+	else if (day==30&&month==8){c=true;aniver="<@537249302234398722>"}//Erle
 	//September
 	else if (day==9&&month==9){c=true;aniver="<@416282550256795648>"}//Novaborn
 	else if (day==26&&month==9){c=true;aniver="<@267798407085686784>"}//fdamned6
