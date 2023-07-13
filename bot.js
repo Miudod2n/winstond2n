@@ -363,7 +363,8 @@ function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat
 	var oi = client.guilds.get('598136432707502130'); 
 	//598136432707502132 general chat
-     oi.channels.get('598136432707502132').send("30 min for Night Time! I'm scared!");598136432707502132
+     oi.channels.get('598136432707502132').send("30 min for Night Time! <@1129091170748862464>");//598136432707502132
+	//1129091170748862464
 	//<@&699730237625335809>
 }
     
