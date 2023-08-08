@@ -462,7 +462,7 @@ function birthdays (day,month){
 	//July
 	//August
 	else if (day==11&&month==8){c=true;aniver="<@146652848245964800>"}//Theincredible
-	else if (day==15&&month==8){c=true;aniver="<@455290757432213506>"}//Palomino
+	else if (day==9&&month==8){c=true;aniver="<@455290757432213506>"}//Palomino
 	else if (day==18&&month==8){c=true;aniver="<@624067980661227550>"}//Sheya
 	else if (day==26&&month==8){c=true;aniver="<@220556893716742144>"}//Bram
 	else if (day==30&&month==8){c=true;aniver="<@537249302234398722>"}//Erle
