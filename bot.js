@@ -469,6 +469,7 @@ function birthdays (day,month){
 	else if (day==30&&month==8){c=true;aniver="<@537249302234398722>"}//Erle
 	//September
 	else if (day==9&&month==9){c=true;aniver="<@416282550256795648>"}//Novaborn
+	else if (day==12&&month==9){c=true;aniver="<@145255162519355393>"}//Vaniglia
 	else if (day==26&&month==9){c=true;aniver="<@267798407085686784>"}//fdamned6
 	//November
 	else if (day==25&&month==11){c=true;aniver="<@254985021192929281>"}//RuinT
