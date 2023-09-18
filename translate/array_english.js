@@ -1,5 +1,3 @@
-
-
 let array = [
 "4000 zombies gaze at us",
 "5th wheel of the caravan",
