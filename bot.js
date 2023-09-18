@@ -462,7 +462,6 @@ function birthdays (day,month){
 	//July
 	//August
 	else if (day==11&&month==8){c=true;aniver="<@146652848245964800>"}//Theincredible
-	else if (day==10&&month==8){c=true;aniver="<@231483688028864513>"}//ApolloFireweaver
 	else if (day==9&&month==8){c=true;aniver="<@455290757432213506>"}//Palomino
 	else if (day==18&&month==8){c=true;aniver="<@624067980661227550>"}//Sheya
 	else if (day==26&&month==8){c=true;aniver="<@220556893716742144>"}//Bram
@@ -477,6 +476,7 @@ function birthdays (day,month){
 	else if (day==17&&month==12){c=true;aniver="<@594216847721889803>"}//Joanne
 	else if (day==18&&month==12){c=true;aniver="<@269191615913000961>"}//matsuuu
 	else if (day==25&&month==12){c=true;aniver="<@544990372149985280>"}//Denny joke
+        else if (day==31&&month==12){c=true;aniver="<@231483688028864513>, and happy new year everyone"}//ApolloFireweaver
 	else {aniver="";}
 	
 	if (c){return "\nHappy Birthday "+aniver+"!";}
