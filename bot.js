@@ -441,8 +441,9 @@ function areArgsValid(mainString, targetStrings) {
 function birthdays (day,month){
 	var aniver = "";var c=false;
 	//January
+	if (day==7&&month==1){c=true;aniver="<@395544163426369536>"}//Elmo-Arturia
 	//February
-	if (day==4&&month==2){c=true;aniver="<@346743408053846017>"}//cliche
+	else if (day==4&&month==2){c=true;aniver="<@346743408053846017>"}//cliche
 	else if (day==11&&month==2){c=true;aniver="<@134064828976332800>"}//Dylan
 	else if (day==14&&month==2){c=true;aniver="<@302855904452280323>"}//Natamar
 	else if (day==26&&month==2){c=true;aniver="<@379924747879710721>"}//Cinek West
