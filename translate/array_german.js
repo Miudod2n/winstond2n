@@ -1195,7 +1195,8 @@ let array = [
 "Sandige Bretzel",
 "Primitiver Hurlingstock",
 "Lebriges Pint",
-"Sammler-Pins"
+"Sammler-Pins",
+"Blaugoldige Thermalbäder",
 "Dayan Riesenrad",
 "Defensivanpassung",
 "Verschmutzte Rinnen",
