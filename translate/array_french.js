@@ -1195,7 +1195,8 @@ let array = [
 "Bretzel Sableux",
 "Bâton De Hurling Primitif",
 "Pinte Collante",
-"Pins De Collectionneur"
+"Pins De Collectionneur",
+"Thermes de l'Or bleu",
 "Grande roue de Grostas",
 "Ajustement défensif",
 "Gouttières crasseuses",
