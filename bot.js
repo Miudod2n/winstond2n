@@ -446,7 +446,7 @@ function birthdays (day,month){
 	else if (day==4&&month==2){c=true;aniver="<@346743408053846017>"}//cliche
 	else if (day==11&&month==2){c=true;aniver="<@134064828976332800>"}//Dylan
 	else if (day==14&&month==2){c=true;aniver="<@302855904452280323>"}//Natamar
-	else if (day==26&&month==2){c=true;aniver="<@379924747879710721>"}//Cinek West
+	else if (day==27&&month==2){c=true;aniver="<@379924747879710721>"}//Cinek West
 	//March
 	else if (day==14&&month==3){c=true;aniver="<@466628724960264194>"}//Ivana
 	//April
