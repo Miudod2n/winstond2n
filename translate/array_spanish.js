@@ -1219,7 +1219,7 @@
 "Pueblo subterráneo",
 "Plano Urbano",
 "Minas vitamínicas",
-"Calabazas Arruinadas",
+"Gran Calabaza",
 "Estuche de medicamentos",
 "Guirnalda de Cuervo"];
 module.exports = {array}
