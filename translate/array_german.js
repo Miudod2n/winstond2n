@@ -1219,7 +1219,7 @@ let array = [
 "Unterirdische Stadt",
 "Stadtplan",
 "Vitaminen",
-"Wüste Kürbisse",
+"Toller Kürbis",
 "Erste Hilfe Tasche",
 "Krähengirlande"];
 module.exports = {array}
