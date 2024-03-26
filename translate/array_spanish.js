@@ -250,7 +250,6 @@
 "Osito cariñosito maldito",
 "Equipo de música maldito",
 "Cianuro",
-"Perro salchicha",
 "Indestructible",
 "Carnada para zombies",
 "Chorizo temible",
