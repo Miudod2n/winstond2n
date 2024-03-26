@@ -250,7 +250,6 @@ let array = [
 "Cursed Cuddly Toy",
 "Cursed HiFi",
 "Cyanide",
-"Dachshund",
 "Dances with Hordes",
 "Dances with zombies",
 "Danny Ocean",
