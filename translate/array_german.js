@@ -250,7 +250,6 @@ let array = [
 "Verfluchter Teddybär",
 "Verfluchte HiFi",
 "Zyanid",
-"Dackel",
 "Unzerstörbar",
 "Der mit den Zombies tanzt",
 "Ali Baba",
