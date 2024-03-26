@@ -250,7 +250,6 @@ let array = [
 "Teddy nOurs maudit",
 "Chaine Hifi maudite",
 "Cyanure",
-"Teckel",
 "Increvable",
 "Danse avec les zombies",
 "Maître cambrioleur",
