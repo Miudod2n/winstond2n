@@ -60,8 +60,8 @@ client.on('message', message =>{
          );
 
 client.on('message',message => {
-    if (message.content === '!guitar') { 
-        message.channel.send("Guitar alert turned on");
+    if (message.content === '!pilley') { 
+        message.channel.send("Pill for Billey alert turned on");
         setTimeout(function(){ // in leftToAttack() milliseconds run this:
             var dayMillsecondsguitar = 1000 * 60 * 60 * 24;
             sendMessageGuitar();
@@ -330,7 +330,7 @@ function leftToAttack(){
 
 function leftToGuitar(){
     var d = new Date();
-    var yada = -d + d.setHours(17,30,5,0); //18:30 igt
+    var yada = -d + d.setHours(22,40,5,0); //18:30 igt
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -362,8 +362,8 @@ function sendMessage(){
 function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat
 	var oi = client.guilds.get('598136432707502130'); 
-	//598136432707502132 general chat
-     oi.channels.get('598136432707502132').send("30 min for Night Time! <@&1129091170748862464>");//598136432707502132
+	//598136432707502132 general chat 663021630565515306
+     oi.channels.get('663021630565515306').send("Did <@&137600460239405056> take pills today?");//598136432707502132
 	//1129091170748862464
 	//<@&699730237625335809>
 }
