@@ -330,7 +330,7 @@ function leftToAttack(){
 
 function leftToGuitar(){
     var d = new Date();
-    var yada = -d + d.setHours(22,55,5,0); //18:30 igt
+    var yada = -d + d.setHours(22,50,5,0); //18:30 igt
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -363,7 +363,7 @@ function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat 663021630045290530
 	var oi = client.guilds.get('663021630045290530'); 
 	//598136432707502132 general chat 663021630565515306
-     oi.channels.get('663021630565515306').send("Did <@&137600460239405056> take pills today?");//598136432707502132
+     oi.channels.get('663021630565515306').send("Did <@137600460239405056> take his pills today?");//598136432707502132
 	//1129091170748862464
 	//<@&699730237625335809>
 }
