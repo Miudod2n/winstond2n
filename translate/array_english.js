@@ -1185,7 +1185,7 @@ let array = [
 "Zen Camper",
 "Zen-ergizer",
 "Zombie favourite",
-"Zombie Grater",
+"Zombie-shredder",
 "Zombies eliminated",
 "Zone",
 "Mug Of Lukewarm Liquid",
