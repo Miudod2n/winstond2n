@@ -307,7 +307,7 @@ client.on('message', message =>{
                 } else { 
                     novoint = ((126-dano)+1)/2; 
                 }
-                message.channel.send("Reactor needs "+novoint+"AP in repairs, staying at **" + safe +  " AP UNrepaired** level to be safe.");
+                message.channel.send("Reactor needs - nevermind, this thing is broken since Workshop upgrades also affect repairs too... go do math");
             }
         }
     }
@@ -317,7 +317,7 @@ client.on('message', message =>{
 function leftToAttack(){
     var d = new Date();
     console.log(d);
-    var yada = -d + d.setHours(23,20,5,0); //utc attack over
+    var yada = -d + d.setHours(00,20,5,0); //utc attack over
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -330,7 +330,7 @@ function leftToAttack(){
 
 function leftToGuitar(){
     var d = new Date();
-    var yada = -d + d.setHours(22,50,5,0); //18:30 igt
+    var yada = -d + d.setHours(23,50,5,0); //18:30 igt
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
