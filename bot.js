@@ -314,6 +314,11 @@ client.on('message', message =>{
 
 });
 
+client.on('message', message =>{
+    if (message.content.startsWith("!west")) {      
+            message.channel.send("https://cdn.discordapp.com/attachments/663021630565515306/1223058653695709314/image.png?ex=66187922&is=66060422&hm=e4ea450029b771304a4b1e47c813dae38418006ad806fd9528c1bd68d3dd79b7&");
+});
+
 function leftToAttack(){
     var d = new Date();
     console.log(d);
