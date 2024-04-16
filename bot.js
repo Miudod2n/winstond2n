@@ -12,14 +12,14 @@ let spanishb = spanish.array;
 
 client.on('ready', ()=>{
     console.log('I am ready!');
-    setTimeout(function(){ // in leftToAttack() milliseconds run this:
-        var dayMillseconds = 1000 * 60 * 60 * 24;
-        sendMessage();
-        setInterval(function(){ // repeat this every 24 hours
-            sendMessage();
-        }, dayMillseconds);
-        
-    }, leftToAttack());
+    	setTimeout(function(){ // in leftToAttack() milliseconds run this:
+	        var dayMillseconds = 1000 * 60 * 60 * 24;
+	        sendMessage();
+	        setInterval(function(){ // repeat this every 24 hours
+	            sendMessage();
+	        }, dayMillseconds);
+	        
+	   	}, leftToAttack());
     
 	setTimeout(function(){
 		var dayMillseconds = 1000 * 60 * 60 * 24;
@@ -27,7 +27,8 @@ client.on('ready', ()=>{
 	        setInterval(function(){
                     sendMessageGuitar();
                 }, dayMillseconds);
-	}, leftToGuitar());
+		}, leftToGuitar());
+	burp()
 }); 
 
 client.on('message', message =>{
@@ -373,9 +374,14 @@ function sendMessageGuitar(){
 	//1129091170748862464
 	//<@&699730237625335809>
 }
+
+function burp(){
+var dateObj = new Date();
+var hour = dateObj.getHours(); 
+var oi = client.guilds.get('663021630045290530');
+oi.channels.get('729775289797836910').send("*hicup* ... sorry I dc. It is "+hour+"h in whatever new server they put me in"));
+}
     
-
-
 function changestatus(){
     //todo when custom status for bots on discords are available
     //https://github.com/discord/discord-api-docs/issues/1160#issuecomment-546549711
@@ -455,9 +461,9 @@ function birthdays (day,month){
 	else if (day==27&&month==2){c=true;aniver="<@379924747879710721>"}//Cinek West
 	//March
 	else if (day==14&&month==3){c=true;aniver="<@466628724960264194>"}//Ivana
+	else if (day==24&&month==3){c=true;aniver="<@455904123716501513>"}//DGba
 	//April
 	else if (day==5&&month==4){c=true;aniver="<@253564361786785793>"}//Valedres
-	else if (day==16&&month==4){c=true;aniver="<@455904123716501513>"}//DGba
 	//May
 	else if (day==24&&month==5){c=true;aniver="<@141046601572417536>"}//Nekomine
 	//June
