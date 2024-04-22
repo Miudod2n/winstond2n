@@ -451,7 +451,7 @@ let array = [
 "Good taste personified",
 "Grand Key Master",
 "Grapeboom",
-"Grater",
+"Shredder Wall",
 "Great Architect",
 "Great Independent Hermit",
 "Great Mason",
