@@ -10,7 +10,7 @@ let frenchb = french.array;
 let spanish = require('./translate/array_spanish.js');
 let spanishb = spanish.array;
 
-client.on('ready', ()=>{
+client.once('ready', ()=>{
     console.log('I am ready!');
     	setTimeout(function(){ // in leftToAttack() milliseconds run this:
 	        var dayMillseconds = 1000 * 60 * 60 * 24;
