@@ -21,13 +21,13 @@ client.once('ready', ()=>{
 	        
 	   	}, leftToAttack());
     
-	setTimeout(function(){
-		var dayMillseconds = 1000 * 60 * 60 * 24;
-		sendMessageGuitar();
-	        setInterval(function(){
-                    sendMessageGuitar();
-                }, dayMillseconds);
-		}, leftToGuitar());
+	//setTimeout(function(){
+	//	var dayMillseconds = 1000 * 60 * 60 * 24;
+	//	sendMessageGuitar();
+	//        setInterval(function(){
+        //            sendMessageGuitar();
+        //        }, dayMillseconds);
+	//	}, leftToGuitar());
 	burp()
 }); 
 
