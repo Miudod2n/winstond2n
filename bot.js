@@ -379,7 +379,7 @@ function burp(){
 var dateObj = new Date();
 var hour = dateObj.getHours(); 
 var oi = client.guilds.get('663021630045290530');
-oi.channels.get('729775289797836910').send("*hicup* ... sorry I dc. It is "+hour+"h in whatever new server they put me in");
+//oi.channels.get('729775289797836910').send("*hicup* ... sorry I dc. It is "+hour+"h in whatever new server they put me in");
 }
     
 function changestatus(){
