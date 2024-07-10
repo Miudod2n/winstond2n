@@ -12,6 +12,7 @@ let spanishb = spanish.array;
 
 client.once('ready', ()=>{
     console.log('I am ready!');
+	var memenumber = 0;
     	setTimeout(function(){ // in leftToAttack() milliseconds run this:
 	        var dayMillseconds = 1000 * 60 * 60 * 24;
 	        sendMessage();
@@ -20,7 +21,14 @@ client.once('ready', ()=>{
 	        }, dayMillseconds);
 	        
 	   	}, leftToAttack());
-    
+		///memeattack
+    		setTimeout(function(){
+			sendMeme(memenumber);
+			setInterval (function(){
+				memenumber+=1;
+				sendMeme(memenumber);
+			},3600000);
+		},  3600000);
 	//setTimeout(function(){
 	//	var dayMillseconds = 1000 * 60 * 60 * 24;
 	//	sendMessageGuitar();
@@ -448,6 +456,25 @@ function areArgsValid(mainString, targetStrings) {
 	if (!targetStrings.length) return false;
 	if (targetStrings.find( function (s) { return typeof s !== 'string'})) return false;
 	return true;
+}
+
+function sendMeme(numberofmeme){
+	var generald2n = client.guilds.get('598136432707502130');
+	
+	switch (numberofmeme){
+		case 0 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/K0j3qhI.jpeg");break;
+		case 1 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/NNWNETj.jpeg");break;
+		case 2 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/VRgBjLD.jpeg");break;
+		case 3 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/ogtF6wj.jpeg");break;
+		case 4 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/JjKBPP3.jpeg");break;
+		case 5 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/m3sli7H.jpeg");break;
+		case 6 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/c5sH9aJ.png");break;
+		case 7 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/ARON5RZ.jpeg");break;
+		case 8 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/WtuaBrM.jpeg");break;
+		default : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/K0j3qhI.jpeg");break;
+
+	}
+
 }
 
 function birthdays (day,month){
