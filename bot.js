@@ -12,7 +12,7 @@ let spanishb = spanish.array;
 
 client.once('ready', ()=>{
     console.log('I am ready!');
-	var memenumber = 0;
+	//	var memenumber = 0;
     	setTimeout(function(){ // in leftToAttack() milliseconds run this:
 	        var dayMillseconds = 1000 * 60 * 60 * 24;
 	        sendMessage();
@@ -22,13 +22,13 @@ client.once('ready', ()=>{
 	        
 	   	}, leftToAttack());
 		///memeattack
-    		setTimeout(function(){
-			sendMeme(memenumber);
-			setInterval (function(){
-				memenumber+=1;
-				sendMeme(memenumber);
-			},3600000);
-		},  3600000);
+    		//setTimeout(function(){
+		//	sendMeme(memenumber);
+		//	setInterval (function(){
+		//		memenumber+=1;
+	//			sendMeme(memenumber);
+//			},3600000);
+	//	},  3600000);
 	//setTimeout(function(){
 	//	var dayMillseconds = 1000 * 60 * 60 * 24;
 	//	sendMessageGuitar();
