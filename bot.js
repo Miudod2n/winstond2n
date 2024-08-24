@@ -29,13 +29,13 @@ client.once('ready', ()=>{
 	//			sendMeme(memenumber);
 //			},3600000);
 	//	},  3600000);
-	//setTimeout(function(){
-	//	var dayMillseconds = 1000 * 60 * 60 * 24;
-	//	sendMessageGuitar();
-	//        setInterval(function(){
-        //            sendMessageGuitar();
-        //        }, dayMillseconds);
-	//	}, leftToGuitar());
+	setTimeout(function(){
+		var dayMillseconds = 1000 * 60 * 60 * 24;
+		sendMessageGuitar();
+	        setInterval(function(){
+                    sendMessageGuitar();
+                }, dayMillseconds);
+		}, leftToGuitar());
 	burp()
 }); 
 
@@ -378,7 +378,7 @@ function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat 663021630045290530
 	var oi = client.guilds.get('663021630045290530'); 
 	//598136432707502132 general chat 663021630565515306
-     oi.channels.get('663021630565515306').send("Did <@137600460239405056> take his pills today?");//598136432707502132
+     oi.channels.get('663021630565515306').send("https://i.imgur.com/MepR6hJ.png");//598136432707502132
 	//1129091170748862464
 	//<@&699730237625335809>
 }
