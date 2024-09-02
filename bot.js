@@ -378,7 +378,7 @@ function sendMessageGuitar(){
     //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat 663021630045290530
 	var oi = client.guilds.get('663021630045290530'); 
 	//598136432707502132 general chat 663021630565515306
-     oi.channels.get('663021630565515306').send("https://i.imgur.com/rTcRWib.jpeg");//598136432707502132
+     oi.channels.get('663021630565515306').send("https://i.imgur.com/vnDAE4W.jpeg");//598136432707502132
 	//1129091170748862464
 	//<@&699730237625335809>
 }
