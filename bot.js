@@ -97,7 +97,7 @@ client.on('message',message => {
 });
 
 client.on('message',message => { //guiz
-    if (message.content.includes === '?') {
+    if (message.includes === '?') {
         message.channel.send('https://i.imgur.com/Qyt7bXw.jpeg');
     }
 });
