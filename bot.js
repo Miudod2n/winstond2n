@@ -98,7 +98,9 @@ client.on('message',message => {
 
 client.on('message',message => { //guiz
     if (message.content.includes ('?')) {
-        message.channel.send('https://i.imgur.com/Qyt7bXw.jpeg');
+        var guiz = randomIntFromInterval(0,15);
+	    if (guiz === 3){
+	    message.channel.send('https://i.imgur.com/Qyt7bXw.jpeg');}
     }
 });
 
