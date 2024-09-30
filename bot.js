@@ -96,10 +96,16 @@ client.on('message',message => {
     }
 });
 
+client.on('message',message => { 
+    if (message.content.includes ('sneed')) {
+	message.channel.send('heh, sneeeed');
+    }
+});
+
 client.on('message',message => { //guiz
     if (message.content.includes ('?')) {
-        var guiz = randomIntFromInterval(0,15);
-	    if (guiz === 3){
+        var guiz = randomIntFromInterval(30,50);
+	    if (guiz === 42){
 	    message.channel.send('https://i.imgur.com/Qyt7bXw.jpeg');}
     }
 });
