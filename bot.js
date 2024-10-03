@@ -102,6 +102,13 @@ client.on('message',message => {
     }
 });
 
+client.on('message',message => { 
+    if (message.content.includes ('purple')) {
+	message.react('💀');
+    }
+});
+
+
 client.on('message',message => { //guiz
     if (message.content.includes ('?')) {
         var guiz = randomIntFromInterval(30,50);
