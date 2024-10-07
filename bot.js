@@ -350,6 +350,13 @@ client.on('message', message =>{
     }
     });
 
+client.on('message', message =>{
+    if (message.content.startsWith("!s17bigpicture")) {      
+            message.channel.send("> Actually, if you take the big picture, this update is more oriented in the direction of opti cities than never.");
+	    message.channel.send("~~~~  Goblino, Oct 5, 2024, https://myhord.es/jx/forum/jump/2993456");
+    }
+    });
+
 function leftToAttack(){
     var d = new Date();
     console.log(d);
