@@ -357,6 +357,13 @@ client.on('message', message =>{
     }
     });
 
+client.on('message', message =>{
+    if (message.content.startsWith("!feedback")) {      
+            message.channel.send("https://cdn.discordapp.com/attachments/663021630565515306/1293159284460355625/grafik.png?ex=67065bef&is=67050a6f&hm=6913cd2f8a4d927787564dc929d10b155af88cbec31eb14e6fa2080057c87edc&");
+	    message.channel.send("https://myhordes.eu/jx/forum/jump/2996778");
+    }
+    });
+
 function leftToAttack(){
     var d = new Date();
     console.log(d);
