@@ -372,7 +372,7 @@ client.on('message', message =>{
 function leftToAttack(){
     var d = new Date();
     console.log(d);
-    var yada = -d + d.setHours(22,20,5,0); //utc attack over
+    var yada = -d + d.setHours(23,20,5,0); //utc attack over
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -385,7 +385,7 @@ function leftToAttack(){
 
 function leftToGuitar(){
     var d = new Date();
-    var yada = -d + d.setHours(21,50,5,0); //18:30 igt
+    var yada = -d + d.setHours(22,30,5,0); //18:30 igt
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
@@ -415,10 +415,16 @@ function sendMessage(){
 }
 
 function sendMessageGuitar(){
-    //var oi = client.guilds.get('663021630045290530'); Ooozing Inn town chat 663021630045290530
+    var today = new Date();
 	var oi = client.guilds.get('663021630045290530'); 
-	//598136432707502132 general chat 663021630565515306
-     oi.channels.get('663021630565515306').send("");//598136432707502132
+	if(today.getDay() == 6){
+		oi.channels.get('663021630565515306').send("Aren't no one pinging <@509808988712337428> to go back to town in this lovely Saturday night?");}
+	else{
+     oi.channels.get('663021630565515306').send("");}
+	//663021630565515306 Oozing inn #town-chat
+	//598136432707502132 Oozing inn #general-chat
+	//<@509808988712337428> tara
+	
 	//1129091170748862464
 	//<@&699730237625335809>
 }
