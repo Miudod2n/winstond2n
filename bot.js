@@ -12,6 +12,8 @@ let spanishb = spanish.array;
 
 client.once('ready', ()=>{
     console.log('I am ready!');
+	var today = new Date();
+	console.log("today is "+today.getDay());
 	//	var memenumber = 0;
     	setTimeout(function(){ // in leftToAttack() milliseconds run this:
 	        var dayMillseconds = 1000 * 60 * 60 * 24;
@@ -420,6 +422,7 @@ function sendMessageGuitar(){
 	if(today.getDay() == 6){
 		oi.channels.get('663021630565515306').send("Aren't no one pinging <@509808988712337428> to go back to town in this lovely Saturday night?");}
 	else{
+		console.log(today.getDay());
      oi.channels.get('663021630565515306').send("");}
 	//663021630565515306 Oozing inn #town-chat
 	//598136432707502132 Oozing inn #general-chat
