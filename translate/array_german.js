@@ -1220,5 +1220,9 @@ let array = [
 "Vitaminen",
 "Toller Kürbis",
 "Erste Hilfe Tasche",
-"Krähengirlande"];
+"Krähengirlande",
+"Verlassener Bunker",
+"Verlassenes Hospital",
+"Verlassenes Hotel"
+];
 module.exports = {array}
