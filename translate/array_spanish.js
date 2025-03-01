@@ -1222,6 +1222,6 @@
 "Estuche de medicamentos",
 "Guirnalda de Cuervo",
 "Bunker Abandonado",
-  "Hospital Abandonado,
+  "Hospital Abandonado",
  "Hotel Abandonado"];
 module.exports = {array}
