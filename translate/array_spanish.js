@@ -1220,5 +1220,8 @@
 "Minas vitamínicas",
 "Gran Calabaza",
 "Estuche de medicamentos",
-"Guirnalda de Cuervo"];
+"Guirnalda de Cuervo",
+"Bunker Abandonado",
+  "Hospital Abandonado,
+ "Hotel Abandonado"];
 module.exports = {array}
