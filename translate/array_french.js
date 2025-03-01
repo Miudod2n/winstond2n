@@ -1220,5 +1220,8 @@ let array = [
 "Mines vitaminées",
 "Citrouille impressionnante",
 "Boîte à pharmacie",
-  "Guirlande de Corbeaux"];
+  "Guirlande de Corbeaux",
+"Bunker abandonné",
+"Hôpital abandonné",
+"Hôtel abandonné"];
 module.exports = {array}
