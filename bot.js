@@ -387,7 +387,7 @@ function leftToAttack(){
 
 function leftToGuitar(){
     var d = new Date();
-    var yada = -d + d.setHours(22,30,5,0); //18:30 igt
+    var yada = -d + d.setHours(21,30,5,0); //18:30 igt
     if (Math.sign(yada)>0){
         console.log (yada);
         return yada;
