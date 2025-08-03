@@ -420,7 +420,7 @@ function sendMessageGuitar(){
     var today = new Date();
 	var oi = client.guilds.get('663021630045290530'); 
 	if(today.getDay() == 6){
-		oi.channels.get('663021630565515306').send("Aren't no one pinging <@509808988712337428> to go back to town in this lovely Saturday night?");}
+		oi.channels.get('663021630565515306').send("Hey <@509808988712337428>, is it still enjoyable to give you Saturday night alarms?");}
 	else{
 		console.log(today.getDay());
      oi.channels.get('663021630565515306').send("");}
@@ -574,3 +574,4 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
