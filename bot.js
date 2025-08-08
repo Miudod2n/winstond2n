@@ -120,7 +120,7 @@ client.on('message',message => { //guiz
     if (message.content.includes ('?')) {
         var guiz = randomIntFromInterval(30,50);
 	    if (guiz === 42){
-	    message.channel.send('https://i.imgur.com/Qyt7bXw.jpeg');}
+	    message.channel.send('Nice question, I respectfully wonder what Gizmo would have replied to it');}
     }
 });
 
@@ -574,4 +574,5 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
