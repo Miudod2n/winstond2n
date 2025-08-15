@@ -272,7 +272,7 @@ client.on('message', message => {
     if (message.content === "!as"){
         message.channel.send("Auto-search warning set.");
         setTimeout(function(){
-            message.channel.send("<@"+message.author+ ">", go check your auto-search.");
+            message.channel.send("<@"+message.author+ ">, go check your auto-search.");
         },7200 * 1000);
     }
 });
@@ -281,7 +281,7 @@ client.on('message', message => {
     if (message.content === "!ass"){
         message.channel.send("Short Auto-search warning set (1h 30min).");
         setTimeout(function(){
-            message.channel.send("<@"+message.author+ ">", go check your auto-search.");
+            message.channel.send("<@"+message.author+ ">, go check your auto-search.");
         },5400 * 1000);
     }
 });
@@ -322,7 +322,7 @@ client.on('message', message =>{
 
         message.channel.send("Alarm warning set ("+resto+"min).");
         setTimeout(function(){
-            message.channel.send("<@"+message.author+ ">", you wanted a ping now.");
+            message.channel.send("<@"+message.author+ ">, you wanted a ping now.");
         },(resto*60) * 1000);
             }
         }
@@ -576,6 +576,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
