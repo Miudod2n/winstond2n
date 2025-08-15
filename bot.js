@@ -1,7 +1,8 @@
 require('dotenv').config();     
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const ObjectsToCsv = require("objects-to-csv");
+const client = new Discord.Client();
+
 let english = require('./translate/array_english.js');
 let englishb = english.array;
 let german = require('./translate/array_german.js');
@@ -610,6 +611,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
