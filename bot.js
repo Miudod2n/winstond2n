@@ -1,6 +1,7 @@
 require('dotenv').config();     
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const ObjectsToCsv = require("objects-to-csv");
 let english = require('./translate/array_english.js');
 let englishb = english.array;
 let german = require('./translate/array_german.js');
@@ -40,6 +41,41 @@ client.once('ready', ()=>{
 		}, leftToGuitar());
 	burp()
 }); 
+client.on("message", async (msg) => {
+	// Only allow this command from admins
+	if (msg.member && msg.member.hasPermission(["ADMINISTRATOR"])) {
+		// Listen for message that says "/members" (not case sensitive)
+		if (msg.content.toLowerCase() === "!members") {
+			generateCsvOfMembers(msg)
+		}
+	}
+})
+async function generateCsvOfMembers(msg) {
+	let members = []
+	let guild = msg.guild
+
+	guild.members.cache.forEach((member) => {
+		members.push({
+			member: member.user.tag,
+			joined: member.joinedAt.toString().split(" GMT")[0],
+		})
+	})
+
+	// Sort list by joined date
+	members.sort((a, b) => {
+		return new Date(a.joined) - new Date(b.joined)
+	})
+
+	const csv = new ObjectsToCsv(members)
+	await csv.toDisk("./members.csv")
+		.then(() => {
+			msg.channel.send(`Here's a list of all ${guild.memberCount} server members!`, { files: ["./members.csv"] })
+		})
+		.catch((err) => {
+			console.log("Error getting a list of Discord guild members.", err)
+			msg.channel.send("Error getting the members of this server.")
+		})
+}
 
 client.on('message', message =>{
     if (message.content.startsWith("!translate")) {
@@ -574,5 +610,6 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
