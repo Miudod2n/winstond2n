@@ -408,19 +408,19 @@ function sendMessage(){
 	var dateObj = new Date();
 	var month = dateObj.getUTCMonth() + 1; 
 	var day = dateObj.getUTCDate()+1;
-    var generald2n = client.guilds.get('598136432707502130');
+    var generald2n = client.guilds.cache.get('598136432707502130');
         generald2n.channels.get('598136432707502132').send("The zombie attack is now over. Are you still alive?"+birthdays(day+"",month+""));
 
-   // var wch = client.guilds.get('163300463314337793');
+   // var wch = client.guilds.cache.get('163300463314337793');
    //     wch.channels.get('695661832240758864').send("The zombie attack is now over. Are you still alive?");
     
-   // var oi = client.guilds.get('663021630045290530');
+   // var oi = client.guilds.cache.get('663021630045290530');
    //  oi.channels.get('663021630565515306').send("The zombie attack is now over. Are you still alive?");
 }
 
 function sendMessageGuitar(){
     var today = new Date();
-	var oi = client.guilds.get('663021630045290530'); 
+	var oi = client.guilds.cache.get('663021630045290530'); 
 	if(today.getDay() == 6){
 		oi.channels.get('663021630565515306').send("Hey <@509808988712337428>, is it still enjoyable to give you Saturday night alarms?");}
 	else{
@@ -437,7 +437,7 @@ function sendMessageGuitar(){
 function burp(){
 var dateObj = new Date();
 var hour = dateObj.getHours(); 
-var oi = client.guilds.get('663021630045290530');
+var oi = client.guilds.cache.get('663021630045290530');
 //oi.channels.get('729775289797836910').send("*hicup* ... sorry I dc. It is "+hour+"h in whatever new server they put me in");
 }
     
@@ -510,7 +510,7 @@ function areArgsValid(mainString, targetStrings) {
 }
 
 function sendMeme(numberofmeme){
-	var generald2n = client.guilds.get('598136432707502130');
+	var generald2n = client.guilds.cache.get('598136432707502130');
 	
 	switch (numberofmeme){
 		case 0 : generald2n.channels.get('598136432707502132').send("https://i.imgur.com/K0j3qhI.jpeg");break;
@@ -576,6 +576,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
