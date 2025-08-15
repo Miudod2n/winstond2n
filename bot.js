@@ -263,7 +263,7 @@ client.on('message', message => {
     if (message.content === "!bl"){
         message.channel.send("Banklock warning set.");
         setTimeout(function(){
-            message.channel.send(message.author.cache+ ", banklock over.");
+            message.channel.send(message.author.displayName+ ", banklock over.");
         },900000);
     }
 });
@@ -576,6 +576,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
