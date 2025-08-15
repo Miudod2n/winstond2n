@@ -1,9 +1,13 @@
 require('dotenv').config();     
 //const Discord = require('discord.js');
 //const client = new Discord.Client();
-const { Client, Intents } = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
-
+const { Client, GatewayIntentBits } = require('discord.js')
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        // ...
+    ]
+})
 
 let english = require('./translate/array_english.js');
 let englishb = english.array;
@@ -582,6 +586,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
