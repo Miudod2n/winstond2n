@@ -96,7 +96,10 @@ client.on('message',message => {
 
 client.on('message',message => {
     if (message.content === '!ping') {
-        message.channel.send('pong');
+		message.channel.send(message.author.displayName+' pong');
+		message.channel.send(message.author.tag+' pong');
+		message.channel.send(message.author.username'pong');
+        message.channel.send('normal pong');
     }
 });
 
@@ -576,6 +579,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
