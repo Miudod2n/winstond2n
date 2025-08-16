@@ -112,6 +112,12 @@ client.on('message',message => {
     }
 });
 
+client.on('message',message => { 
+    if (message.content.includes ('Emy')) {
+	message.channel.send('<@321016270269186049> https://i.imgur.com/B2QuGaf.mp4');
+    }
+});
+
 client.on('message',message => {
     if (message.content === '!hordianspiritqc') {
         message.channel.send('https://cdn.discordapp.com/attachments/663021630565515306/1296058719062462505/Screenshot_20241016-123403.jpg?ex=6710e83e&is=670f96be&hm=2d940ef258bca7c1a600b8a8c4a4a0f3799e521e08f6a4391621f206aeb82e99&');
@@ -576,6 +582,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
