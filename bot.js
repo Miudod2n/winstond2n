@@ -113,8 +113,8 @@ client.on('message',message => {
 });
 
 client.on('message',message => { 
-    if (message.content.includes ('Emy')) {
-	message.channel.send('<@321016270269186049> https://i.imgur.com/B2QuGaf.mp4');
+    if (message.content.includes ('emy')) {
+	message.channel.send('Word containing <@321016270269186049> detected. Initiating Jaws Emy Protocol https://i.imgur.com/B2QuGaf.mp4');
     }
 });
 
@@ -588,6 +588,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
