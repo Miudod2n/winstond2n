@@ -1223,7 +1223,7 @@ let array = [
 "Crow garland",
 "Abandoned Bunker",
 "Abandoned Hospital",
-"Abandoned Hotel"
+"Abandoned Hotel",
 "Strategist",
 "University",
 "Prepared",
@@ -1256,4 +1256,5 @@ let array = [
 "Tamer Experiment Center",
 "Filtering gutters"]; 
 module.exports = {array}
+
 
