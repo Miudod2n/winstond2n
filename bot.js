@@ -161,13 +161,13 @@ client.on('message', message =>{
             case "DoA":case "doa":case "DOA": 
                 resultado = "DoA is an acronym to **Drunkards of the Apocalypse**, a die2nite meta. DoA was created around Season 10 by Ivana.";break;
             case "EC":case "ec":
-                resultado = "EC stands for **E**lectric **C**omponent, a rare resource used on several constructions and items. http://d2nwiki.com/wiki/Electronic_component";break;
+                resultado = "EC stands for **E**lectric **C**omponent, a rare resource used on several constructions and items. https://en.mhwiki.org/wiki/Electronic_component";break;
             case "EE": case "ee":
                 resultado = "EE is an acronym that stands for **E**xpert **E**xpeditions. This is the name of a rare distinction earned by exploring a ruin that is 18Km or more from town and acquiring an object. EE hunters sometimes swarm random towns in search of a cornered town (a town that spawns off the center of the map, allowing a higher chance of more EE ruins) in between their meta jumps.";break;
             case "e.ruin": case "E.Ruin":
-                resultado = "E.Ruin is an acronym to **E**xplorable **R**uin. This is a special sort of ruin that presents a mini-game of dungeon exploration once explored. Every big map town has one E.Ruin (2 on Hardcore towns). There are 3 types of e.ruins and each present a different set of unique items and blueprints. http://d2nwiki.com/wiki/Explorable_Ruins";break;
+                resultado = "E.Ruin is an acronym to **E**xplorable **R**uin. This is a special sort of ruin that presents a mini-game of dungeon exploration once explored. Every big map town has one E.Ruin (2 on Hardcore towns). There are 3 types of e.ruins and each present a different set of unique items and blueprints. https://en.mhwiki.org/wiki/Explorable_Ruins";break;
             case "EWB": case "ewb":
-                resultado = "EWB is an acronym for **E**xploding **W**ater **B**omb, a water weapon that can be made out of Water Ration + Plastic Bag and Semtex (plastic bag + duct tape + compact detonator + semtex). http://d2nwiki.com/wiki/Exploding_Water_Bomb";break;
+                resultado = "EWB is an acronym for **E**xploding **W**ater **B**omb, a water weapon that can be made out of Water Ration + Plastic Bag and Semtex (plastic bag + duct tape + compact detonator + semtex). https://en.mhwiki.org/wiki/Exploding_Water_Bomb";break;
             case "hippies": case "Hippies":
                 resultado = "hippies is an acronym to **Happy Hippies**, a die2nite meta that did social jumps (whatever that means). hippies was created by Joanne and Babooshka76 around Season 6.";break;   
             case "ingsoc":case "INGSOC":case "Ingsoc": 
@@ -175,19 +175,19 @@ client.on('message', message =>{
             case "LS":case "ls":
                 resultado = "LS is an acronym to **Lost Souls**, a die2nite meta. LS was created on Season 4.";break;   
             case "LMS":case "Lms":case "lms":
-                resultado = "LMS is an acronym to **L**ast **M**an **S**tanding, a distinction earned by the last player to die inside town. To be elegible to LMS, a player needs to be inside town during the last attack that will kill everyone inside town. LMS is random, so having more personal defense won't mather. Hardcore Towns award 2 LMS disctinctions: a regular LMS distinction and a Hardcore LMS distinction. Earning LMS would also earn some Hero days, but since May 2020 Hero days are now free. http://d2nwiki.com/wiki/Last_Man_Standing";break;
+                resultado = "LMS is an acronym to **L**ast **M**an **S**tanding, a distinction earned by the last player to die inside town. To be elegible to LMS, a player needs to be inside town during the last attack that will kill everyone inside town. LMS is random, so having more personal defense won't mather. Hardcore Towns award 2 LMS disctinctions: a regular LMS distinction and a Hardcore LMS distinction. Earning LMS would also earn some Hero days, but since May 2020 Hero days are now free. https://en.mhwiki.org/wiki/Last_Man_Standing";break;
             case "MMJ": case "mmj":
                 resultado = "MMJ is an acronym that stands for **M**ega **M**eta **J**ump. MMJ is an event where several players schedule a day to jump in a random town at the same time. This is usually a server-wide event and quite often results in 5 or more towns filled with random players from several meta groups as wel as lone wolf players. MMJs were first used to bypass the meta-cap, a game rule that blocked several coalitions of joining the same town, thus disallowing groups of skilled players to play together in the same town. Once the meta-cap was lifted, the players kept doing MMJs every new season as a celebration.";break;
             case "MoS": case "mos": case "MOS":
-                resultado = "MoS is an acronym that stands for **M**inistry **o**f **S**lavery, a die2nite construction unlocked via Very Rare Blueprints (One of the preset VRs from A. Bunker e.ruins). MoS allows shunned players to use AP on constructions and the AP used this way contributes with a multiplier of 1.5 . https://github.com/Miudod2n/winstond2n/raw/master/images/mos.png Metas quite often make use of this construction by deliberating shunning some players that constitute the builder force of the town. This, altogether with scrapping (since shunned can't update external maps) and removing the shun later using Altar is a common strategy for when this blueprint is unlocked early http://d2nwiki.com/wiki/Ministry_of_Slavery.";break;
+                resultado = "MoS is an acronym that stands for **M**inistry **o**f **S**lavery, a die2nite construction unlocked via Very Rare Blueprints (One of the preset VRs from A. Bunker e.ruins). MoS allows shunned players to use AP on constructions and the AP used this way contributes with a multiplier of 1.5 . https://github.com/Miudod2n/winstond2n/raw/master/images/mos.png Metas quite often make use of this construction by deliberating shunning some players that constitute the builder force of the town. This, altogether with scrapping (since shunned can't update external maps) and removing the shun later using Altar is a common strategy for when this blueprint is unlocked early https://en.mhwiki.org/wiki/Ministry_of_Slavery.";break;
             case "N&C":case "n&c":
                 resultado = "N&C is an acronym to **Nick & Company**, a die2nite meta. N&C was created on Season 5 by VertigoProcess.";break;   
             case "NHB":case "nhb":
-                resultado = "NHB stands for **N**o **H**oles **B**arred, a water construction that provides 150 rations. http://d2nwiki.com/wiki/No_Holes_Barred";break;
+                resultado = "NHB stands for **N**o **H**oles **B**arred, a water construction that provides 150 rations. https://en.mhwiki.org/wiki/No_Holes_Barred";break;
             case "OI":case "INN":case "inn": 
                 resultado = resto+" is one of the acronyms to **Oozing Inn**, a die2nite meta. OI was created on Season 1 by Bram.";break;
             case "IBG":case "ibg":case "Ibg": 
-                resultado = resto+" is the acronym for **I**ndian **B**urial **G**round, a type of ruin. It spawns 3-6km from town. It is the only ruin that drops Meaty Bones. It has a negative 5% (1 upgrade) penalty for camping as topology. http://d2nwiki.com/wiki/Indian_Burial_Ground";break;
+                resultado = resto+" is the acronym for **I**ndian **B**urial **G**round, a type of ruin. It spawns 3-6km from town. It is the only ruin that drops Meaty Bones. It has a negative 5% (1 upgrade) penalty for camping as topology. https://en.mhwiki.org/wiki/Indian_Burial_Ground";break;
             case "P9C":case "p9c":
                 resultado = "P9C is an acronym to **Plan 9 Consortium**, a die2nite meta. P9C was proved to be a meta of multiple accounts and then disbanded.";break;
             case "RM":case "rm":
@@ -207,7 +207,7 @@ client.on('message', message =>{
             case "SS":case "ss": 
                 resultado = "SS stands for **Suicide Squad**, a die2nite meta. SS was created by pkeod on Season 12.";break;
             case "ST":case "st":
-                resultado = "ST stands for **S**earch **T**ower, a upgradable construction that reveal which direction was struck with replenishing winds. http://d2nwiki.com/wiki/Searchtower";break;
+                resultado = "ST stands for **S**earch **T**ower, a upgradable construction that reveal which direction was struck with replenishing winds. https://en.mhwiki.org/wiki/Searchtower";break;
             case "SVV":case "svv": 
                 resultado = "SVV stands for **The Survivors**, a die2nite meta also known as Wandering Souls. SVV was created by Forgotten on Season 12.";break;
             case "TZ":case "tz": 
@@ -219,7 +219,7 @@ client.on('message', message =>{
             case "WCH":case "wch": 
                 resultado = "WCH stands for **Working Class Heroes**, a die2nite meta that had mostly Residents in its ranks. WCH was created on Season 5 by Miudo.";break;   
             case "WLB":case "wlb": 
-                resultado = "WLB is an acronym to **W**orn **L**eather **B**ag, a container item that holds Blueprints (BPs). http://d2nwiki.com/wiki/Worn_Leather_Bag";break;   
+                resultado = "WLB is an acronym to **W**orn **L**eather **B**ag, a container item that holds Blueprints (BPs). https://en.mhwiki.org/wiki/Worn_Leather_Bag";break;   
             case "WF":case "wf":case"wonfai":case"Wonfai":
                 resultado = resto+" stands for **Wonderful Failure**, a die2nite meta. WF was created by Sense on Season 1. More information: https://twinoid.com/g/wonderful-failure#";break;
             case "ZOA":case "zoa": 
@@ -234,7 +234,7 @@ client.on('message', message =>{
             case "Hordes":case "hordes":
                 resultado = "**Hordes** is the original version of the game in french. Hordes was created in June 2008. It is currently on Season 14. There are 4 Distant Regions towns, 1 Hardcore towns, and 2 Small Map Towns open at a time. http://www.hordes.fr/";break;
             case "cata": case "Cata":
-                resultado = "Cata is a short version for **Catapult**, a construction. The Catapult is a special construction unlocked via Common Blueprints. It is capable of throwing some objects at the World Beyond. The Catapult Operator (\"Cata Operator\") is selected at random base on the activity level of every citizen. It is possible to assign a catapult operator by having one person log after the attack and achieve 5 activity stars by doing the following: ```log in \nopen gates\nwalk outside on some zones searching and back inside\ntake water from Well\npost on forum\nwork in workshop\nvote for an upgrade\nand finally finish catapult and assign an operator``` http://d2nwiki.com/wiki/Catapult";break;
+                resultado = "Cata is a short version for **Catapult**, a construction. The Catapult is a special construction unlocked via Common Blueprints. It is capable of throwing some objects at the World Beyond. The Catapult Operator (\"Cata Operator\") is selected at random base on the activity level of every citizen. It is possible to assign a catapult operator by having one person log after the attack and achieve 5 activity stars by doing the following: ```log in \nopen gates\nwalk outside on some zones searching and back inside\ntake water from Well\npost on forum\nwork in workshop\nvote for an upgrade\nand finally finish catapult and assign an operator``` https://en.mhwiki.org/wiki/Catapult";break;
             case "zed": case "zom": case "ZED": case "Zed":
                 resultado = resto+" in die2nite is a cute acronym for **Zombies**.";break;
             case "OO": case "oo":
@@ -244,13 +244,13 @@ client.on('message', message =>{
             case "Mapviewer": case "mapviewer": case "MV": case"mv":
                 resultado = "**Mapviwer** was an external die2nite tool that provided map functionalities as well as other tools for a better die2nite experience. Mapviewer was created and hosted by Rulesy. Its hosting was no longer renewed so the website is down for the moment.";break;
             case "attrition": case "despair": case "Attrition": case "Despair": case "zd": case "ZD":
-                resultado = resto+ " is a short way to say **Zombie Despair**. ZD is an effect that happens in a zone when zombies are killed. Depending on the number of zombies killed in the zone it will produce a residual killing effect that is called Zombie Despair or Zombie Attrition in the next days. http://d2nwiki.com/wiki/Zombie_Despair";break;
+                resultado = resto+ " is a short way to say **Zombie Despair**. ZD is an effect that happens in a zone when zombies are killed. Depending on the number of zombies killed in the zone it will produce a residual killing effect that is called Zombie Despair or Zombie Attrition in the next days. https://en.mhwiki.org/wiki/Zombie_Despair";break;
             case "DR": case "dr":
-                resultado = "A "+resto+" town is a **D**istant **R**egion town. In other words it is a town with a big map. http://d2nwiki.com/wiki/Town#Distant_Towns";break;
+                resultado = "A "+resto+" town is a **D**istant **R**egion town. In other words it is a town with a big map. https://en.mhwiki.org/wiki/Town#Distant_Towns";break;
             case "HC": case "hc":
-                resultado = "A "+resto+" town is a **H**ard**c**ore town. It is a big map town with extra difficulties. http://d2nwiki.com/wiki/Town#Hardcore_Towns";break;
+                resultado = "A "+resto+" town is a **H**ard**c**ore town. It is a big map town with extra difficulties. https://en.mhwiki.org/wiki/Town#Hardcore_Towns";break;
             case "SM": case "sm":
-                resultado = "A "+resto+" town is a **S**mall **M**ap town. Originally, the game was played on such towns, but on Season 2, the bigger map towns were introduced. Nowadays, the SM towns are the home for the newcomers and players with under 100 Soul Points. Heroes can also join SM towns. http://d2nwiki.com/wiki/Town#Small_Towns";break;
+                resultado = "A "+resto+" town is a **S**mall **M**ap town. Originally, the game was played on such towns, but on Season 2, the bigger map towns were introduced. Nowadays, the SM towns are the home for the newcomers and players with under 100 Soul Points. Heroes can also join SM towns. In Season 17 after a poll the devs of MyHordes decided to remove Small Maps. They can still be created as a type of Private Town https://en.mhwiki.org/wiki/Town#Small_Towns";break;
             case "BED": case "bed":
                 resultado = "BED is the acronym for **B**roken **E**lectronic **D**evice, a die2nite resource item that needs to be workshopped into other useful items. https://github.com/Miudod2n/winstond2n/raw/master/images/bed.png";break;
             case "wapi": case "WAPI": case "WaPi":
@@ -588,6 +588,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
