@@ -1223,7 +1223,7 @@ let array = [
   "Guirlande de Corbeaux",
 "Bunker abandonné",
 "Hôpital abandonné",
-"Hôtel abandonné"
+"Hôtel abandonné",
 "Stratège",
 "Universitaire",
 "Préparé",
@@ -1256,4 +1256,5 @@ let array = [
 "Centre d’essai des Apprivoiseurs",
 "Gouttières filtrantes"];
 module.exports = {array}
+
 
