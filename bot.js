@@ -268,7 +268,7 @@ client.on('message', message =>{
 			case "S3":
                 resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 3 (:man_student: Expert), which provides **slow decrease on surv chances for Watch**, :camera_with_flash: **Pre-war camera (2 charges)**, and :weary: **5x complaints/day**";break;
 			case "S4":
-                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 4 (:older_man: Master), which provides **+10def on watch**";break;
+                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 4 (:older_man: Master), which provides **+ 2% survival on Watch**, **Pre-war camera (4 charges)**, **Can steal from people while they are in town**";break;
 
 			case "U1":
                 resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 1 (:baby: Beginner), which provides **Heroic Rescue 1km** and **Cheat Death (Dehydration and Infection)**";break;
@@ -285,14 +285,30 @@ client.on('message', message =>{
 			case "P2":
                 resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 2 (:nerd: Apprentice), which provides **+1 Control Point** and **1x Shrewd Citizen's Stash and First Aid Kit at the start of town**";break;
 			case "P3":
-                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 3 (:man_student: Expert), which provides **slow decrease on surv chances for Watch**, :camera_with_flash: **Pre-war camera (2 charges)**, and :weary: **5x complaints/day**";break;
+                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 3 (:man_student: Expert), which provides **+1 Control Point if not Thirsty or Dehydrated**, *1x Common Blueprint at start of town**, and **1x Lunchbox (replacing Doggybag from P1)**";break;
 			case "P4":
-                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 4 (:older_man: Master), which provides **+10def on watch**";break;
+                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 4 (:older_man: Master), which provides **+1 Control Point if not Drunk or Hungover**, **1x Wornleather Bag (replacing 1x Common BP from P3)**, and **1x Cello case at the start of town**";break;
 
+			case "E1":
+                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 1 (:baby: Beginner), which provides **+1 Rucksack and Chest space**, **Uppercut 2 zombies**, and **Second Wind (2AP|2EP)**";break;
+			case "E2":
+                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 2 (:nerd: Apprentice), which provides **+1 Rucksack and Chest space**, **Uppercut 3 zombies**, and **Second Wind (2AP|4EP)**";break;
+			case "E3":
+                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 3 (:man_student: Expert), which provides **Uppercut 4 zombies**, **Second Wind (4AP|4EP)**, and **+15% Oxygen on E.ruin**";break;
+			case "E4":
+                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 4 (:older_man: Master), which provides **+ 2% survival on Watch**, **Pre-war camera (4 charges)**, **Can steal from people while they are in town**";break;
 
+			case "R1":
+                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 1 (:baby: Beginner), which provides **Heroic Return 9Km**, **Can try to Camp 6 times**, and **Basic Seeker**";break;
+			case "R2":
+                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 2 (:nerd: Apprentice), which provides **Heroic Return 11Km**, **Can try to Camp 8 times**, **Lucky Find replaces Basic Seeker**, and **Gets 2x Vial of Poison if shunned day 3+**";break;
+			case "R3":
+                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 3 (:man_student: Expert), which provides **Heroic Return 13Km**, **Impressive Find replaces Lucky Find**, **Gets 2x Vial of Poison and 1x Toxin if shunned day 3+**, and **+1 Refuse Search/day**";break;
+			case "R4":
+                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -622,6 +638,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
