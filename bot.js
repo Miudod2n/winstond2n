@@ -257,8 +257,42 @@ client.on('message', message =>{
                 resultado = resto+" is an acronym to **W**ater **P**istol, a die2nite water weapon, and can reffer both a loaded or empty Water Pistol";break;
             case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB":
                 resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
+			case "coa": case "COA": case "Coa":
+                resultado = resto + " is an acronym to **Coa**lition in English and French ('*alianza*' in Spanish | '*koalition*' in German)";break;
+			case "alianza": case "Alianza": case "ALIANZA":
+                resultado = resto + " is a Spanish acronym to Coalition";break;
+			case "S1":
+                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 1 (:baby: Beginner), which provides **+10def on watch**";break;
+			case "S2":
+                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 2 (:nerd: Apprentice), which provides :camera_with_flash: **Pre-war camera (2 charges)** and :potable_water: **1x Water ration at the start of town**";break;
+			case "S3":
+                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 3 (:man_student: Expert), which provides **slow decrease on surv chances for Watch**, :camera_with_flash: **Pre-war camera (2 charges)**, and :weary: **5x complaints/day**";break;
+			case "S4":
+                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 4 (:older_man: Master), which provides **+10def on watch**";break;
+
+			case "U1":
+                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 1 (:baby: Beginner), which provides **Heroic Rescue 1km** and **Cheat Death (Dehydration and Infection)**";break;
+			case "U2":
+                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 2 (:nerd: Apprentice), which provides **Heroic Rescue 2km** and **Cheat Death (Dehydration, Infection, and Withdrawal)**";break;
+			case "U3":
+                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 3 (:man_student: Expert), which provides **Heroic Rescue 3km**, **Cheat Death (Dehydration, Infection, Withdrawal, and Ghoul Hunger)**, and **+1 Chest space**";break;
+			case "U4":
+                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 4 (:older_man: Master), which provides **Rudimentary Healing (heals Thirst and Infection)** and **Cheat Death (Dehydration, Infection, Withdrawal, and Ghoul Hunger in addition to healing Hungover and Terrorised status)**";break;
+
+
+			case "P1":
+                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 1 (:baby: Beginner), which provides **+1 Control Point if Clean** and **1x Doggy Bag at start**";break;
+			case "P2":
+                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 2 (:nerd: Apprentice), which provides **+1 Control Point** and **1x Shrewd Citizen's Stash and First Aid Kit at the start of town**";break;
+			case "P3":
+                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 3 (:man_student: Expert), which provides **slow decrease on surv chances for Watch**, :camera_with_flash: **Pre-war camera (2 charges)**, and :weary: **5x complaints/day**";break;
+			case "P4":
+                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 4 (:older_man: Master), which provides **+10def on watch**";break;
+
+
+				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -588,6 +622,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
