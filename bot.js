@@ -113,7 +113,7 @@ client.on('message',message => {
 });
 
 client.on('message',message => { 
-    if (message.content.includes ('emy')) {
+    if (message.content.includes ('asdasdA axwdASd awdasd')) {
 	message.channel.send('Word containing <@321016270269186049> detected. Initiating Jaws Emy Protocol https://i.imgur.com/B2QuGaf.mp4');
     }
 });
@@ -638,6 +638,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
