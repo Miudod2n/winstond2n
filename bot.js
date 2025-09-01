@@ -120,7 +120,7 @@ client.on('message',message => {
 
 client.on('message',message => { 
     if (message.content.includes ('!xp')) {
-	message.channel.send('https://i.imgur.com/myJWOJS.png');
+	message.channel.send('https://i.imgur.com/FviW8gN.png');
     }
 });
 
@@ -638,6 +638,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
