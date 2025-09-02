@@ -253,8 +253,10 @@ client.on('message', message =>{
                 resultado = "A "+resto+" town is a **S**mall **M**ap town. Originally, the game was played on such towns, but on Season 2, the bigger map towns were introduced. Nowadays, the SM towns are the home for the newcomers and players with under 100 Soul Points. Heroes can also join SM towns. In Season 17 after a poll the devs of MyHordes decided to remove Small Maps. They can still be created as a type of Private Town https://en.mhwiki.org/wiki/Town#Small_Towns";break;
             case "BED": case "bed":
                 resultado = "BED is the acronym for **B**roken **E**lectronic **D**evice, a die2nite resource item that needs to be workshopped into other useful items. https://github.com/Miudod2n/winstond2n/raw/master/images/bed.png";break;
-            case "wapi": case "WAPI": case "WaPi":
+            case "wapi": case "WAPI": case "WaPi": case "WP": case "wp":
                 resultado = resto+" is an acronym to **W**ater **P**istol, a die2nite water weapon, and can reffer both a loaded or empty Water Pistol";break;
+			case "tc": case "TC": case "Tc": case "tC": 
+                resultado = resto+" is an english acronym to **T**raveler's **C**orpse (FR = Cadavre d'un voyageur |DE = Leiche eines Reisenden |ES = Cadáver de un viajero), the heavy item that can turn you into a Ghoul";break;
             case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB":
                 resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
 			case "coa": case "COA": case "Coa":
@@ -308,7 +310,7 @@ client.on('message', message =>{
                 resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi(wp), TC```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -638,6 +640,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
