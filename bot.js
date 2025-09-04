@@ -255,9 +255,15 @@ client.on('message', message =>{
                 resultado = "BED is the acronym for **B**roken **E**lectronic **D**evice, a die2nite resource item that needs to be workshopped into other useful items. https://github.com/Miudod2n/winstond2n/raw/master/images/bed.png";break;
             case "wapi": case "WAPI": case "WaPi": case "WP": case "wp":
                 resultado = resto+" is an acronym to **W**ater **P**istol, a die2nite water weapon, and can reffer both a loaded or empty Water Pistol";break;
+			case "blp": case "BLP": case "Blp": case "blps": case "BLPS":
+                resultado = resto+" is an english acronym to **B**urning **L**aser **P**ointer, a battery weapon https://en.mhwiki.org/wiki/Burning_Laser_Pointer_(Empty)";break;
+			case "bp": case "BP": case "Bps": case "bps": case "BPS":
+                resultado = resto+" is an english acronym to **B**lueprint";break;
+			case "puntero": case "Puntero":
+                resultado = resto+" is the spanish short name for the Burning Laser Pointer weapon";break;
 			case "tc": case "TC": case "Tc": case "tC": 
                 resultado = resto+" is an english acronym to **T**raveler's **C**orpse (FR = Cadavre d'un voyageur |DE = Leiche eines Reisenden |ES = Cadáver de un viajero), the heavy item that can turn you into a Ghoul";break;
-            case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB":
+            case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB": case "nabs": case "N&Bs": case "n&bs":
                 resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
 			case "coa": case "COA": case "Coa":
                 resultado = resto + " is an acronym to **Coa**lition in English and French ('*alianza*' in Spanish | '*koalition*' in German)";break;
@@ -310,7 +316,7 @@ client.on('message', message =>{
                 resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi(wp), TC```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, puntero```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -640,6 +646,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
