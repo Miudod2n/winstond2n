@@ -132,7 +132,7 @@ client.on('message',message => {
 
 client.on('message',message => { //guiz
     if (message.content.includes ('?')) {
-        var guiz = randomIntFromInterval(30,50);
+        var guiz = randomIntFromInterval(30,500);
 	    if (guiz === 42){
 	    message.channel.send('Nice question, I respectfully wonder what Gizmo would have replied to it');}
     }
@@ -646,6 +646,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
