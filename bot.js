@@ -259,6 +259,13 @@ client.on('message', message =>{
                 resultado = resto+" is an english acronym to **B**urning **L**aser **P**ointer, a battery weapon https://en.mhwiki.org/wiki/Burning_Laser_Pointer_(Empty)";break;
 			case "bp": case "BP": case "Bps": case "bps": case "BPS":
                 resultado = resto+" is an english acronym to **B**lueprint";break;
+
+			case "lboc": case "Lboc": case "LBOC": 
+                resultado = resto+" is an english acronym to **L**ittle **B**ook of **C**alm (FR = Livre zen miniature | DE= Kleine Zen-Fibel | ES =  Mini-libro de meditación), the book item you hold to prevent terror (or read to get a RP item)";break;
+
+			case "fpf": case "FPF": case "Fpf": 
+                resultado = resto+" is an english acronym to **F**lat**p**acked **F**urniture (FR = Meuble en kit | DE = Möbelpackung | ES = Mueble para armar), heavy item that can become a Jarpen Table";break;
+				
 			case "puntero": case "Puntero":
                 resultado = resto+" is the spanish short name for the Burning Laser Pointer weapon";break;
 			case "tc": case "TC": case "Tc": case "tC": 
@@ -646,6 +653,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
