@@ -48,11 +48,26 @@ client.on('message', message =>{
         var resto = message.content.substring(11);
         console.log(englishb.length+"|"+spanishb.length+"|"+frenchb.length);
         var indeex =2000; 
+
+		var tmpusa = englishb.join('~').toLowerCase();
+		var enArray = tmp.split('~');
+		var tmpfr = frenchb.join('~').toLowerCase();
+		var frArray = tmp.split('~');
+		var tmpesp = spanishb.join('~').toLowerCase();
+		var espArray = tmp.split('~');
+		var tmpger = germanb.join('~').toLowerCase();
+		var gerArray = tmp.split('~');
+
+		var restosmall = resto.toLowerCase();
         
-        if (englishb.includes(resto)){indeex= englishb.indexOf(resto);}
-        else if (germanb.includes(resto)) {indeex= germanb.indexOf(resto);}
-        else if (spanishb.includes(resto)) {indeex= spanishb.indexOf(resto);}
-        else if (frenchb.includes(resto)) {indeex= frenchb.indexOf(resto);}
+        //if (englishb.includes(resto)){indeex= englishb.indexOf(resto);}
+        //else if (germanb.includes(resto)) {indeex= germanb.indexOf(resto);}
+        //else if (spanishb.includes(resto)) {indeex= spanishb.indexOf(resto);}
+        //else if (frenchb.includes(resto)) {indeex= frenchb.indexOf(resto);}
+		if (enArray.includes(resto)){indeex= enArray.indexOf(restosmall);}
+        else if (gerArray.includes(resto)) {indeex= gerArray.indexOf(restosmall);}
+        else if (espArray.includes(resto)) {indeex= espArray.indexOf(restosmall);}
+        else if (frArray.includes(resto)) {indeex= frArray.indexOf(restosmall);}
         
         if (indeex>1999){
             var indexb1 =findBestMatch(resto, englishb) ; 
@@ -660,6 +675,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
