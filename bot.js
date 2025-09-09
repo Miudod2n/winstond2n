@@ -64,10 +64,10 @@ client.on('message', message =>{
         //else if (germanb.includes(resto)) {indeex= germanb.indexOf(resto);}
         //else if (spanishb.includes(resto)) {indeex= spanishb.indexOf(resto);}
         //else if (frenchb.includes(resto)) {indeex= frenchb.indexOf(resto);}
-		if (enArray.includes(resto)){indeex= enArray.indexOf(restosmall);}
-        else if (gerArray.includes(resto)) {indeex= gerArray.indexOf(restosmall);}
-        else if (espArray.includes(resto)) {indeex= espArray.indexOf(restosmall);}
-        else if (frArray.includes(resto)) {indeex= frArray.indexOf(restosmall);}
+		if (enArray.includes(restosmall)){indeex= enArray.indexOf(restosmall);}
+        else if (gerArray.includes(restosmall)) {indeex= gerArray.indexOf(restosmall);}
+        else if (espArray.includes(restosmall)) {indeex= espArray.indexOf(restosmall);}
+        else if (frArray.includes(restosmall)) {indeex= frArray.indexOf(restosmall);}
         
         if (indeex>1999){
             var indexb1 =findBestMatch(resto, englishb) ; 
@@ -675,6 +675,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
