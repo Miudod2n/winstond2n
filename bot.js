@@ -225,7 +225,11 @@ client.on('message', message =>{
             case "ZOA":case "zoa": 
                 resultado = "ZOA stands for **Zombies Outside Alliance**, a die2nite meta. ZOA was created by Embacie (in memoriam) on Season 6.";break;   
             case "zoo":case "zombie zoo": case "Zoo":
-                resultado = "A zoo or **Zombie Zoo** is a game practice that involves clearing the zombies from the map except from one corner and maintaining them there. The benefits of a zombie zoo are the freedom of movement in the World Beyond and a better control of the map. To make a zombie zoo it is required a few days of scouting and camping and killing zombies from everywhere there shouldn't be zombies, in other words, from the zombie zoo corner. After the zoo is built some killing maintenance is necessary every other day to contain the spread. This is often called \"trim the zoo\". A zoo can be made on any corner the town so desires. It also depends on the placement of ruins and zombie patchs, as well as distance and resources available (both human and items). Sometimes towns that can't make a corner zoo try a \"half zoo\" which is a zoo occupying half of the map.\n Creating a zombie zoo might cause a global zombie respawn if the amount of zombies killed in its making surpass a certain threshold that depends on the map size.";break;   
+                resultado = "A zoo or **Zombie Zoo** is a game practice that involves clearing the zombies from the map except from one corner and maintaining them there. The benefits of a zombie zoo are the freedom of movement in the World Beyond and a better control of the map. To make a zombie zoo it is required a few days of scouting and camping and killing zombies from everywhere there shouldn't be zombies, in other words, from the zombie zoo corner. After the zoo is built some killing maintenance is necessary every other day to contain the spread. This is often called \"trim the zoo\". A zoo can be made on any corner the town so desires. It also depends on the placement of ruins and zombie patchs, as well as distance and resources available (both human and items). Sometimes towns that can't make a corner zoo try a \"half zoo\" which is a zoo occupying half of the map.\n Creating a zombie zoo might cause a global zombie respawn if the amount of zombies killed in its making surpass a certain threshold that depends on the map size.";break;
+			case "PAT":case "Pat": case "pat":
+                resultado = "This is the french acronym to **P**ost **At**taque and reffers to the time immediately following the attack (00:20+ game time)";break;
+			case "PSC":case "psc": case "Psc":
+                resultado = "This is the english acronym to **P**sychadellic **S**pirtual **C**onseul (FR = Discours rassurant multicoloré | DE = Geistiger Beistand | ES = Discurso motivador. The item produced with LSD + Chuck Figurine and provides +20 def per watchmen";break;
 //**
             case "DV":case "dv": 
                 resultado = "DV is an acronym to **Die Verdammten**, the german version of the game. DV was the first language version to be released from the original french Hordes in June 2010. It is currently stuck at Season 11. It has 3 Distant towns, 1 Hardcore, and 1 Small Town open at a time. http://www.dieverdammten.de/";break;
@@ -326,7 +330,7 @@ case "NAB": case "PP": case "Pp": case "pp": case "pharma":
                 resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```PP, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, puntero```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```PP, PSC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, puntero```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -656,6 +660,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
