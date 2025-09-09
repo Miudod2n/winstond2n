@@ -50,13 +50,13 @@ client.on('message', message =>{
         var indeex =2000; 
 
 		var tmpusa = englishb.join('~').toLowerCase();
-		var enArray = tmp.split('~');
+		var enArray = tmpusa.split('~');
 		var tmpfr = frenchb.join('~').toLowerCase();
-		var frArray = tmp.split('~');
+		var frArray = tmpfr.split('~');
 		var tmpesp = spanishb.join('~').toLowerCase();
-		var espArray = tmp.split('~');
+		var espArray = tmpesp.split('~');
 		var tmpger = germanb.join('~').toLowerCase();
-		var gerArray = tmp.split('~');
+		var gerArray = tmpger.split('~');
 
 		var restosmall = resto.toLowerCase();
         
@@ -675,6 +675,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
