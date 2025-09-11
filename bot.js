@@ -381,13 +381,15 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === "!ass"){
-		if(!message.author==320874649145835522){
-	        message.channel.send("Short Auto-search warning set (1h 30min).");
+		var number = randomIntFromInterval(0,9);
+		console.log("ass# "+message.author);
+		if(number===0||message.author===320874649145835522){
+			message.channel.send("https://static.wikia.nocookie.net/mycun-the-movie/images/4/40/Bob%27s_butt.png/revision/latest?cb=20230509152343");
+		}else{
+			message.channel.send("Short Auto-search warning set (1h 30min).");
 	        setTimeout(function(){
 	            message.channel.send("<@"+message.author+ ">, go check your auto-search.");
-	        },5400 * 1000);
-		}else{
-			message.channel.send("https://static.wikia.nocookie.net/mycun-the-movie/images/4/40/Bob%27s_butt.png/revision/latest?cb=20230509152343");
+	        },5400 * 1000);			
 		}
     }
 });
@@ -682,6 +684,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
