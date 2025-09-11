@@ -199,6 +199,8 @@ client.on('message', message =>{
                 resultado = "N&C is an acronym to **Nick & Company**, a die2nite meta. N&C was created on Season 5 by VertigoProcess.";break;   
             case "NHB":case "nhb":
                 resultado = "NHB stands for **N**o **H**oles **B**arred, a water construction that provides 150 rations. https://en.mhwiki.org/wiki/No_Holes_Barred";break;
+			case "TEC":case "Tec": case "tec":
+                resultado = "TEC stands for **T**amer **E**xperimentation **C**enter (:flag_fr: = Centre d’essai des Apprivoiseurs | :flag_de: = Experimentelle Klinik der Dompteure | :flag_es: = Centro de pruebas de Domadores) the construction that allows you to lure animals to town with food";break;
             case "OI":case "INN":case "inn": 
                 resultado = resto+" is one of the acronyms to **Oozing Inn**, a die2nite meta. OI was created on Season 1 by Bram.";break;
             case "IBG":case "ibg":case "Ibg": 
@@ -244,7 +246,7 @@ client.on('message', message =>{
 			case "PAT":case "Pat": case "pat":
                 resultado = "This is the french acronym to **P**ost **At**taque and reffers to the time immediately following the attack (00:20+ game time)";break;
 			case "PSC":case "psc": case "Psc":
-                resultado = "This is the english acronym to **P**sychadellic **S**pirtual **C**onseul (FR = Discours rassurant multicoloré | DE = Geistiger Beistand | ES = Discurso motivador. The item produced with LSD + Chuck Figurine and provides +20 def per watchmen";break;
+                resultado = "This is the english acronym to **P**sychadellic **S**pirtual **C**onseul (:flag_fr: = Discours rassurant multicoloré | :flag_de: = Geistiger Beistand | :flag_es: = Discurso motivador. The item produced with LSD + Chuck Figurine and provides +20 def per watchmen";break;
 //**
             case "DV":case "dv": 
                 resultado = "DV is an acronym to **Die Verdammten**, the german version of the game. DV was the first language version to be released from the original french Hordes in June 2010. It is currently stuck at Season 11. It has 3 Distant towns, 1 Hardcore, and 1 Small Town open at a time. http://www.dieverdammten.de/";break;
@@ -280,72 +282,73 @@ client.on('message', message =>{
                 resultado = resto+" is an english acronym to **B**lueprint";break;
 
 			case "lboc": case "Lboc": case "LBOC": 
-                resultado = resto+" is an english acronym to **L**ittle **B**ook of **C**alm (FR = Livre zen miniature | DE= Kleine Zen-Fibel | ES =  Mini-libro de meditación), the book item you hold to prevent terror (or read to get a RP item)";break;
-
+                resultado = resto+" is an english acronym to **L**ittle **B**ook of **C**alm (:flag_fr: = Livre zen miniature | :flag_de:= Kleine Zen-Fibel | :flag_es: =  Mini-libro de meditación), the book item you hold to prevent terror (or read to get a RP item)";break;
+			case "BL": case "bl": case "Bl": 
+                resultado = resto+" is an english acronym to **B**ank**l**ock, the 15 minute bank activity cooldown";break;
 			case "fpf": case "FPF": case "Fpf": 
-                resultado = resto+" is an english acronym to **F**lat**p**acked **F**urniture (FR = Meuble en kit | DE = Möbelpackung | ES = Mueble para armar), heavy item that can become a Jarpen Table";break;
+                resultado = resto+" is an english acronym to **F**lat**p**acked **F**urniture (:flag_fr: = Meuble en kit | :flag_de: = Möbelpackung | :flag_es: = Mueble para armar), heavy item that can become a Jarpen Table";break;
 				
 			case "puntero": case "Puntero":
                 resultado = resto+" is the spanish short name for the Burning Laser Pointer weapon";break;
 			case "tc": case "TC": case "Tc": case "tC": 
-                resultado = resto+" is an english acronym to **T**raveler's **C**orpse (FR = Cadavre d'un voyageur |DE = Leiche eines Reisenden |ES = Cadáver de un viajero), the heavy item that can turn you into a Ghoul";break;
+                resultado = resto+" is an english acronym to **T**raveler's **C**orpse (:flag_fr: = Cadavre d'un voyageur |:flag_de: = Leiche eines Reisenden |:flag_es: = Cadáver de un viajero), the heavy item that can turn you into a Ghoul";break;
             case "NAB": case "nab": case "n&b": case "N&B": case "neb": case "NEB": case "nabs": case "N&Bs": case "n&bs":
                 resultado = resto + " is an acronym to Handful of **N**uts **&** **B**olts, a very important resource item that is present on both constructions and item assemblage. https://github.com/Miudod2n/winstond2n/raw/master/images/neb.png";break;
 case "NAB": case "PP": case "Pp": case "pp": case "pharma": 
-                resultado = resto + " is an acronym to **P**harmaceutical **P**roducts (FR = Produits Pharmaceutiques | DE = Pharmazeutische Substanz | ES = Productos farmacéuticos ";break;
+                resultado = resto + " is an acronym to **P**harmaceutical **P**roducts (:flag_fr: = Produits Pharmaceutiques | :flag_de: = Pharmazeutische Substanz | :flag_es: = Productos farmacéuticos ";break;
 				
 			case "coa": case "COA": case "Coa":
                 resultado = resto + " is an acronym to **Coa**lition in English and French ('*alianza*' in Spanish | '*koalition*' in German)";break;
 			case "alianza": case "Alianza": case "ALIANZA":
                 resultado = resto + " is a Spanish acronym to Coalition";break;
 			case "S1":
-                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 1 (:baby: Beginner), which provides **+10def on watch**";break;
+                resultado = resto + " is an acronym to the skill **Strategist** (:flag_fr:=Stratège |:flag_de:=Strategie |:flag_es:= Sabio) on level 1 (:baby: Beginner), which provides **+10def on watch**";break;
 			case "S2":
-                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 2 (:nerd: Apprentice), which provides :camera_with_flash: **Pre-war camera (2 charges)** and :potable_water: **1x Water ration at the start of town**";break;
+                resultado = resto + " is an acronym to the skill **Strategist** (:flag_fr:=Stratège |:flag_de:=Strategie |:flag_es:= Sabio) on level 2 (:nerd: Apprentice), which provides :camera_with_flash: **Pre-war camera (2 charges)** and :potable_water: **1x Water ration at the start of town**";break;
 			case "S3":
-                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 3 (:man_student: Expert), which provides **slow decrease on surv chances for Watch**, :camera_with_flash: **Pre-war camera (2 charges)**, and :weary: **5x complaints/day**";break;
+                resultado = resto + " is an acronym to the skill **Strategist** (:flag_fr:=Stratège |:flag_de:=Strategie |:flag_es:= Sabio) on level 3 (:man_student: Expert), which provides **slow decrease on surv chances for Watch**, :camera_with_flash: **Pre-war camera (2 charges)**, and :weary: **5x complaints/day**";break;
 			case "S4":
-                resultado = resto + " is an acronym to the skill **Strategist** (FR=Stratège |DE=Strategie |ES= Sabio) on level 4 (:older_man: Master), which provides **+ 2% survival on Watch**, **Pre-war camera (4 charges)**, **Can steal from people while they are in town**";break;
+                resultado = resto + " is an acronym to the skill **Strategist** (:flag_fr:=Stratège |:flag_de:=Strategie |:flag_es:= Sabio) on level 4 (:older_man: Master), which provides **+ 2% survival on Watch**, **Pre-war camera (4 charges)**, **Can steal from people while they are in town**";break;
 
 			case "U1":
-                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 1 (:baby: Beginner), which provides **Heroic Rescue 1km** and **Cheat Death (Dehydration and Infection)**";break;
+                resultado = resto + " is an acronym to the skill **University** (:flag_fr:=Universitaire |:flag_de:=Umsicht |:flag_es:= Universitario) on level 1 (:baby: Beginner), which provides **Heroic Rescue 1km** and **Cheat Death (Dehydration and Infection)**";break;
 			case "U2":
-                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 2 (:nerd: Apprentice), which provides **Heroic Rescue 2km** and **Cheat Death (Dehydration, Infection, and Withdrawal)**";break;
+                resultado = resto + " is an acronym to the skill **University** (:flag_fr:=Universitaire |:flag_de:=Umsicht |:flag_es:= Universitario) on level 2 (:nerd: Apprentice), which provides **Heroic Rescue 2km** and **Cheat Death (Dehydration, Infection, and Withdrawal)**";break;
 			case "U3":
-                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 3 (:man_student: Expert), which provides **Heroic Rescue 3km**, **Cheat Death (Dehydration, Infection, Withdrawal, and Ghoul Hunger)**, and **+1 Chest space**";break;
+                resultado = resto + " is an acronym to the skill **University** (:flag_fr:=Universitaire |:flag_de:=Umsicht |:flag_es:= Universitario) on level 3 (:man_student: Expert), which provides **Heroic Rescue 3km**, **Cheat Death (Dehydration, Infection, Withdrawal, and Ghoul Hunger)**, and **+1 Chest space**";break;
 			case "U4":
-                resultado = resto + " is an acronym to the skill **University** (FR=Universitaire |DE=Umsicht |ES= Universitario) on level 4 (:older_man: Master), which provides **Rudimentary Healing (heals Thirst and Infection)** and **Cheat Death (Dehydration, Infection, Withdrawal, and Ghoul Hunger in addition to healing Hungover and Terrorised status)**";break;
+                resultado = resto + " is an acronym to the skill **University** (:flag_fr:=Universitaire |:flag_de:=Umsicht |:flag_es:= Universitario) on level 4 (:older_man: Master), which provides **Rudimentary Healing (heals Thirst and Infection)** and **Cheat Death (Dehydration, Infection, Withdrawal, and Ghoul Hunger in addition to healing Hungover and Terrorised status)**";break;
 
 
 			case "P1":
-                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 1 (:baby: Beginner), which provides **+1 Control Point if Clean** and **1x Doggy Bag at start**";break;
+                resultado = resto + " is an acronym to the skill **Prepared** (:flag_fr:=Préparé |:flag_de:=Planung |:flag_es:= Planificador) on level 1 (:baby: Beginner), which provides **+1 Control Point if Clean** and **1x Doggy Bag at start**";break;
 			case "P2":
-                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 2 (:nerd: Apprentice), which provides **+1 Control Point** and **1x Shrewd Citizen's Stash and First Aid Kit at the start of town**";break;
+                resultado = resto + " is an acronym to the skill **Prepared** (:flag_fr:=Préparé |:flag_de:=Planung |:flag_es:= Planificador) on level 2 (:nerd: Apprentice), which provides **+1 Control Point** and **1x Shrewd Citizen's Stash and First Aid Kit at the start of town**";break;
 			case "P3":
-                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 3 (:man_student: Expert), which provides **+1 Control Point if not Thirsty or Dehydrated**, *1x Common Blueprint at start of town**, and **1x Lunchbox (replacing Doggybag from P1)**";break;
+                resultado = resto + " is an acronym to the skill **Prepared** (:flag_fr:=Préparé |:flag_de:=Planung |:flag_es:= Planificador) on level 3 (:man_student: Expert), which provides **+1 Control Point if not Thirsty or Dehydrated**, *1x Common Blueprint at start of town**, and **1x Lunchbox (replacing Doggybag from P1)**";break;
 			case "P4":
-                resultado = resto + " is an acronym to the skill **Prepared** (FR=Préparé |DE=Planung |ES= Planificador) on level 4 (:older_man: Master), which provides **+1 Control Point if not Drunk or Hungover**, **1x Wornleather Bag (replacing 1x Common BP from P3)**, and **1x Cello case at the start of town**";break;
+                resultado = resto + " is an acronym to the skill **Prepared** (:flag_fr:=Préparé |:flag_de:=Planung |:flag_es:= Planificador) on level 4 (:older_man: Master), which provides **+1 Control Point if not Drunk or Hungover**, **1x Wornleather Bag (replacing 1x Common BP from P3)**, and **1x Cello case at the start of town**";break;
 
 			case "E1":
-                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 1 (:baby: Beginner), which provides **+1 Rucksack and Chest space**, **Uppercut 2 zombies**, and **Second Wind (2AP|2EP)**";break;
+                resultado = resto + " is an acronym to the skill **Enduring** (:flag_fr:=Endurant |:flag_de:=Eifer |:flag_es:= Exuberante) on level 1 (:baby: Beginner), which provides **+1 Rucksack and Chest space**, **Uppercut 2 zombies**, and **Second Wind (2AP|2EP)**";break;
 			case "E2":
-                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 2 (:nerd: Apprentice), which provides **+1 Rucksack and Chest space**, **Uppercut 3 zombies**, and **Second Wind (2AP|4EP)**";break;
+                resultado = resto + " is an acronym to the skill **Enduring** (:flag_fr:=Endurant |:flag_de:=Eifer |:flag_es:= Exuberante) on level 2 (:nerd: Apprentice), which provides **+1 Rucksack and Chest space**, **Uppercut 3 zombies**, and **Second Wind (2AP|4EP)**";break;
 			case "E3":
-                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 3 (:man_student: Expert), which provides **Uppercut 4 zombies**, **Second Wind (4AP|4EP)**, and **+15% Oxygen on E.ruin**";break;
+                resultado = resto + " is an acronym to the skill **Enduring** (:flag_fr:=Endurant |:flag_de:=Eifer |:flag_es:= Exuberante) on level 3 (:man_student: Expert), which provides **Uppercut 4 zombies**, **Second Wind (4AP|4EP)**, and **+15% Oxygen on E.ruin**";break;
 			case "E4":
-                resultado = resto + " is an acronym to the skill **Enduring** (FR=Endurant |DE=Eifer |ES= Exuberante) on level 4 (:older_man: Master), which provides **+ 2% survival on Watch**, **Pre-war camera (4 charges)**, **Can steal from people while they are in town**";break;
+                resultado = resto + " is an acronym to the skill **Enduring** (:flag_fr:=Endurant |:flag_de:=Eifer |:flag_es:= Exuberante) on level 4 (:older_man: Master), which provides **+ 2% survival on Watch**, **Pre-war camera (4 charges)**, **Can steal from people while they are in town**";break;
 
 			case "R1":
-                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 1 (:baby: Beginner), which provides **Heroic Return 9Km**, **Can try to Camp 6 times**, and **Basic Seeker**";break;
+                resultado = resto + " is an acronym to the skill **Reclusive** (:flag_fr:=Reclus |:flag_de:=Ruhe |:flag_es:= Recluso) on level 1 (:baby: Beginner), which provides **Heroic Return 9Km**, **Can try to Camp 6 times**, and **Basic Seeker**";break;
 			case "R2":
-                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 2 (:nerd: Apprentice), which provides **Heroic Return 11Km**, **Can try to Camp 8 times**, **Lucky Find replaces Basic Seeker**, and **Gets 2x Vial of Poison if shunned day 3+**";break;
+                resultado = resto + " is an acronym to the skill **Reclusive** (:flag_fr:=Reclus |:flag_de:=Ruhe |:flag_es:= Recluso) on level 2 (:nerd: Apprentice), which provides **Heroic Return 11Km**, **Can try to Camp 8 times**, **Lucky Find replaces Basic Seeker**, and **Gets 2x Vial of Poison if shunned day 3+**";break;
 			case "R3":
-                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 3 (:man_student: Expert), which provides **Heroic Return 13Km**, **Impressive Find replaces Lucky Find**, **Gets 2x Vial of Poison and 1x Toxin if shunned day 3+**, and **+1 Refuse Search/day**";break;
+                resultado = resto + " is an acronym to the skill **Reclusive** (:flag_fr:=Reclus |:flag_de:=Ruhe |:flag_es:= Recluso) on level 3 (:man_student: Expert), which provides **Heroic Return 13Km**, **Impressive Find replaces Lucky Find**, **Gets 2x Vial of Poison and 1x Toxin if shunned day 3+**, and **+1 Refuse Search/day**";break;
 			case "R4":
-                resultado = resto + " is an acronym to the skill **Reclusive** (FR=Reclus |DE=Ruhe |ES= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
+                resultado = resto + " is an acronym to the skill **Reclusive** (:flag_fr:=Reclus |:flag_de:=Ruhe |:flag_es:= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item acronyms```PP, PSC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, puntero```Concepts```9ap diamond, AS, BT, EE, MMJ, NHB, ST, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item & Construction acronyms```PP, PSC, TEC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, ST, puntero, NHB```Concepts```9ap diamond, AS, BL, BT, EE, MMJ, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -679,6 +682,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
