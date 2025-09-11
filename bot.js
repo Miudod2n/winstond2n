@@ -110,6 +110,12 @@ client.on('message',message => {
 });
 
 client.on('message',message => {
+    if (message.content === '!0days') {
+		message.channel.send('https://i.imgur.com/29B2s1S.png');
+    }
+});
+
+client.on('message',message => {
     if (message.content === '!ping') {
 		message.channel.send('pong');
     }
@@ -684,6 +690,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
