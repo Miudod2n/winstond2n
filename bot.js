@@ -104,7 +104,7 @@ client.on('message',message => {
     if (message.content === '!raffle') { 
         //var user = message.guild.members.cache.random();
         var user = message.guild.members.cache.random().user;
-        console.log(randomUser);
+        console.log(user);
         message.channel.send(`${user}`);
     }
 });
@@ -690,6 +690,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
