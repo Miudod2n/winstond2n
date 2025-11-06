@@ -142,7 +142,7 @@ let array = [
 "Geröstete Marshmallows",
 "Verbrauchte Fackel",
 "Verbrannte Grundschule",
-"Metzger",
+"Metzgerei",
 "Kaffeekocher",
 "Tarnanzug",
 "Feldbett",
@@ -1196,7 +1196,7 @@ let array = [
 "Lebriges Pint",
 "Sammler-Pins",
 "Blaugoldige Thermalbäder",
-"Dayan Riesenrad",
+"Dayan's Riesenrad",
 "Defensivanpassung",
 "Verschmutzte Rinnen",
 "Granatwerfer",
@@ -1256,4 +1256,5 @@ let array = [
 "Experimentelle Klinik der Dompteure",
 "Filtrierende Rinnen"];
 module.exports = {array}
+
 
