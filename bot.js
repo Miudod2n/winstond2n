@@ -354,14 +354,14 @@ case "NAB": case "PP": case "Pp": case "pp": case "pharma":
                 resultado = resto + " is an acronym to the skill **Reclusive** (:flag_fr:=Reclus |:flag_de:=Ruhe |:flag_es:= Recluso) on level 4 (:older_man: Master), which provides **Heroic Return 15Km**, **Incredible Find replaces Impressive Find**, and **Can Camp with 99% survival**";break;	
 
 			case "AC":case "Ac": case "ac":
-                resultado = resto + " is the :flag_en: acronym to the item **A**rchitect **C**hest (:flag_fr:=Coffre d'architecte|:flag_de:=Architektenkoffer:|flag_es:=Maletín de arquitecto) A heavy item containing a Rare Blueprint. 5 of these items are spawned on random locatios of the map (6-15km). You can open them for free.";break;	
+                resultado = resto + " is the :flag_us: acronym to the item **A**rchitect **C**hest (:flag_fr:=Coffre d'architecte | :flag_de:=Architektenkoffer | :flag_es:=Maletín de arquitecto) A heavy item containing a Rare Blueprint. 5 of these items are spawned on random locatios of the map (6-15km). You can open them for free.";break;	
 			case "SAC":case "Sac": case "sac":
-                resultado = resto + " is the :flag_en: acronym to the item **S**ealed **A**rchitect **C**hest (:flag_fr:=Coffre d'architecte scellé|:flag_de:=Versiegelter Architektenkoffer:|flag_es:=Cofre de arquitecto sellado) A heavy item containing a Very Rare Blueprint. 2 of these items are spawned on random locatios of the map (9-21km). You spend 1AP to try opening them (5%) each try";break;	
+                resultado = resto + " is the :flag_us: acronym to the item **S**ealed **A**rchitect **C**hest (:flag_fr:=Coffre d'architecte scellé | :flag_de:=Versiegelter Architektenkoffer | :flag_es:=Cofre de arquitecto sellado) A heavy item containing a Very Rare Blueprint. 2 of these items are spawned on random locatios of the map (9-21km). You spend 1AP to try opening them (5%) each try";break;	
 			case "LMC":case "Lmc": case "lmc":
-                resultado = resto + " is the :flag_en: acronym to the item **L**arge **M**etal **C**hest (:flag_fr:=Gros coffre en métal|:flag_de:=Großer Metallkoffer:|flag_es:=Gran cofre de metal) A heavy item containing  rare items. Finding it grants the Luck distinction. https://i.imgur.com/eXekDS7.png";break;	
+                resultado = resto + " is the :flag_us: acronym to the item **L**arge **M**etal **C**hest (:flag_fr:=Gros coffre en métal | :flag_de:=Großer Metallkoffer | :flag_es:=Gran cofre de metal) A heavy item containing  rare items. Finding it grants the Luck distinction. https://i.imgur.com/eXekDS7.png";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item & Construction acronyms```PP, PSC, TEC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, ST, puntero, NHB```Concepts```9ap diamond, AS, BL, BT, EE, MMJ, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item & Construction acronyms```AC, SAC, LMC, PP, PSC, TEC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, ST, puntero, NHB```Concepts```9ap diamond, AS, BL, BT, EE, MMJ, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -697,6 +697,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
