@@ -172,7 +172,7 @@ client.on('message', message =>{
             case "9ap diamond": case "9AP diamond": case "diamond":
                 resultado = "**9 AP Diamond** is an organized town strategy where players seek to go out and scavenge at 9AP away from town. The result of this is a shape of a diamond in the map. This is done for a number of reasons. Since food and water are the only boosters available on day 1, one player can go up to 9AP away from town counting 6AP base + 6/7AP food + water, round trip. It is always better to deplete zones further from town first as the zones closer to town will get depleted by players returning from their scavenge zones. The diamond also gives some intel on the disposition of nearby ruins the town has before Watchtower kicks in. On organized towns it is customary to select a 9AP diamond spot before the town even start. Some cornered towns might not have a complete diamond as they can be 6AP away from the edge of the map. Here is a day 1 example of a 9AP diamond. https://github.com/Miudod2n/winstond2n/raw/master/images/9apd.png";break;
             case "AS": case "as":
-                resultado = "AS is an acronym that stands for **A**uto **S**earch. It describes the act of waiting in a zone for the next auto-search. It have variations like \"ASing\" (Auto-searching)";break;
+                resultado = "AS is an acronym that stands for **A**uto **S**earch. It describes the act of waiting in a zone for the next auto-search. It have variations like \"ASing\" (Auto-searching)\nIt can also mean **A**qua **S**plash, a weapon item, depending on the context.";break;
             case "BD":case "bd": 
                 resultado = "BD is an acronym to **Benevolent Dictators**, a die2nite meta. BD was created on Season 10 by ValiumCereal and lasted until Season 12.";break;   
             case "BT":case"bt":
@@ -361,7 +361,7 @@ case "NAB": case "PP": case "Pp": case "pp": case "pharma":
                 resultado = resto + " is the :flag_us: acronym to the item **L**arge **M**etal **C**hest (:flag_fr:=Gros coffre en métal | :flag_de:=Großer Metallkoffer | :flag_es:=Gran cofre de metal) A heavy item containing  rare items. Finding it grants the Luck distinction. https://i.imgur.com/eXekDS7.png";break;	
 				
             case "list":
-                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item & Construction acronyms```AC, SAC, LMC, PP, PSC, TEC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, ST, puntero, NHB```Concepts```9ap diamond, AS, BL, BT, EE, MMJ, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,S5,U1,U2,U3,U4,U5,P1,P2,P3,P4,P5,E1,E2,E3,E4,E5,R1,R2,R3,R4,R5```";break;
+                resultado = "Meta acronyms```6FO, 7sins, BD, COS, DoA, hippies, hive, INGSOC, LS, N&C, OI, P9C, RM, RFM, RWF, SS, SC, SotA, SVV, TZ, unnamed, TBS, UZC, WCH, WF, ZOA```Item & Construction acronyms```AC, SAC, LMC, PP, PSC, TEC, LBOC, FPF, EC,  EWB,  BED, N&B, wapi(wp), TC, BP, BLP, ST, puntero, NHB```Concepts```9ap diamond, AS, BL, BT, EE, MMJ, zoo, DV, Zombinoia, Hordes, cata, zed, OO, FDTD, mapviewer, attrition, PAT, DR, HC, SM, coa, alianza,S1,S2,S3,S4,U1,U2,U3,U4,P1,P2,P3,P4,E1,E2,E3,E4,R1,R2,R3,R4```";break;
               
             default: resultado = "I don't know what \""+resto+"\" is. For a list of things I might know about use the command \"!dict list\"";
 
@@ -697,6 +697,7 @@ function birthdays (day,month){
 
 //
 client.login(process.env.TOKEN); 
+
 
 
 
