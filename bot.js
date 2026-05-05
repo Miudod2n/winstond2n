@@ -116,6 +116,12 @@ client.on('message',message => {
 });
 
 client.on('message',message => {
+    if (message.content === '!opti') {
+		message.channel.send('https://i.imgur.com/rXfzYir.jpeg');
+    }
+});
+
+client.on('message',message => {
     if (message.content === '!ping') {
 		message.channel.send('pong');
     }
